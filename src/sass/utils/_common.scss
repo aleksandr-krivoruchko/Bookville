@@ -1,0 +1,70 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+// R E S E T  S T Y L E S
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+// C O M M O N 
+
+body {
+  background: $main-bgc;
+  color: $main-text-color;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
+
+/* Скрываем ненужные заголовки*/
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+//  C O N T A I N E R
+.container {
+  width: 100%;
+  padding-left: 11px;
+  padding-right: 11px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
