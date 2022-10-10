@@ -1,4 +1,18 @@
 .header{
-	background-color: yellow;
-	padding: 12px 0 18px 0;
+		padding: 12px 0 18px 0;
+border-bottom: 1px solid #CDCDCD;
+}
+.header__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+	margin-left: 36px;
+	margin-right: 36px;
+	cursor: pointer;
+}
+.icon{
+	fill: #887569;
+	cursor: pointer;
 }
