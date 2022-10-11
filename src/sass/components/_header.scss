@@ -1,18 +1,82 @@
-.header{
-		padding: 12px 0 18px 0;
+.header { 
+padding: 12px 0 18px 0;
 border-bottom: 1px solid #CDCDCD;
-}
-.header__container{
+
+&__container {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	// @media screen and (min-width: 768px){
+	// 	justify-content: space-around;
+	// }
 }
-.logo{
-	margin-left: 36px;
-	margin-right: 36px;
-	cursor: pointer;
+
+&__item {
+	padding: 0 10px;
+		  @media screen and (min-width: 768px) {
+	padding: 0 15px;
 }
-.icon{
+
+}
+
+&__icon {
+	width: 20px;
+	height: 20px;
 	fill: #887569;
 	cursor: pointer;
+	  @media screen and (min-width: 768px) {
+	width: 25px;
+	height: 25px;
 }
+
+}
+
+&__phone {
+	display: none;
+	p {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: $header-tel-color;
+	margin-left: 13px;
+	}
+  @media screen and (min-width: 768px) {
+	display: flex;
+	align-items: center;
+}
+}
+
+&__left-menu {
+	display: flex;
+  @media screen and (min-width: 768px) {
+	display: none;
+}
+}
+
+&__right-menu {
+display: flex;
+.header__item:first-child{
+display: none;
+@media screen and (min-width: 768px) {
+display: block;
+}
+}
+}
+
+}
+
+
+
+.logo { 
+	width: 96px;
+	height: auto;
+	cursor: pointer;
+	@media screen and (min-width: 768px) {
+position: absolute;
+left: 50%;
+transform: translate(-50%);
+}
+}
+
+
