@@ -1,12 +1,35 @@
 .hero{
+	position: relative;
 	padding: 20px 0;
-&__list{}
-&__item{}
-&__number{
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
-	border: 0.5px solid #887569;
 }
-}
+.btn{
+	position: absolute;
+	bottom: 45px;
+	left: 50%;
 
+	width: 192px;
+	height: 36px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: rgba(255, 255, 255, 0.8);
+border-color: transparent;
+border-radius: 8px;
+
+transform: translate(-50%);
+
+	&__title{
+font-weight: 400;
+font-size: 12px;
+line-height: 1.25;
+color: $btn-bgc;
+margin-right: 10px;
+	}
+
+	&__icon{
+// width: 9px;
+// height: 9px;
+
+	}
+}

@@ -1,4 +1,4 @@
-4717
+4719
 52C:\Kriv\IT\Bookville\node_modules\timsort\.npmignore133095265551709225 0
 59C:\Kriv\IT\Bookville\node_modules\sass\sass.default.dart.js133095265558329610 0
 58C:\Kriv\IT\Bookville\node_modules\node-addon-api\README.md133095265556297313 0
@@ -34,6 +34,18 @@
 64C:\Kriv\IT\Bookville\node_modules\css-what\lib\commonjs\types.js133095265554428091 0
 60C:\Kriv\IT\Bookville\node_modules\msgpackr-extract\README.md133095265553556690 0
 39C:\Kriv\IT\Bookville\node_modules\chalk133095265553746743 1
+64C:\Kriv\IT\Bookville\node_modules\fast-glob\out\types\index.d.ts133095265557509433 0
+65C:\Kriv\IT\Bookville\node_modules\@parcel\utils\src\bundle-url.js133095265553506700 0
+60C:\Kriv\IT\Bookville\node_modules\@parcel\compressor-raw\src133095265552277693 1
+76C:\Kriv\IT\Bookville\node_modules\lmdb\node_modules\node-addon-api\nothing.c133095265551329143 0
+56C:\Kriv\IT\Bookville\node_modules\yaml\browser\schema.js133095265557269373 0
+46C:\Kriv\IT\Bookville\node_modules\run-parallel133095265552417679 1
+81C:\Kriv\IT\Bookville\node_modules\@swc\helpers\lib\_class_apply_descriptor_set.js133095265555447147 0
+118C:\Kriv\IT\Bookville\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\side-effects-false\package.json133095265559480860 0
+66C:\Kriv\IT\Bookville\node_modules\node-gyp-build-optional-packages133095265553596700 1
+109C:\Kriv\IT\Bookville\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node\parcel_sourcemap_wasm.js133095265554997026 0
+49C:\Kriv\IT\Bookville\src\partials\advantages.html133101325020650519 0
+113C:\Kriv\IT\Bookville\node_modules\parcel-reporter-clean-dist\test\fixtures\packageV1\files\embed\embed2\file3.txt133095265558269608 0
 61C:\Kriv\IT\Bookville\node_modules\mdn-data\css\selectors.json133095265556297313 0
 54C:\Kriv\IT\Bookville\node_modules\svgo\lib\svgo\coa.js133095265555507134 0
 106C:\Kriv\IT\Bookville\node_modules\parcel-reporter-clean-dist\test\fixtures\packageV5\files\embed\file2.txt133095265558129573 0
@@ -43,18 +55,6 @@
 72C:\Kriv\IT\Bookville\node_modules\htmlnano\lib\modules\sortAttributes.js133095265556939300 0
 78C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\resizeobserver.js133095265566193026 0
 34C:\Kriv\IT\Bookville\.editorconfig133095260681340893 0
-79C:\Kriv\IT\Bookville\node_modules\parcel-reporter-clean-dist\src\removeFiles.js133095265555317101 0
-84C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\css-element-function.js133095265560185023 0
-48C:\Kriv\IT\Bookville\node_modules\yaml\util.d.ts133095265558417589 0
-58C:\Kriv\IT\Bookville\node_modules\to-regex-range\README.md133095265552627730 0
-56C:\Kriv\IT\Bookville\node_modules\yaml\browser\scalar.js133095265556989329 0
-82C:\Kriv\IT\Bookville\node_modules\@parcel\core\src\requests\WriteBundlesRequest.js133095265560425078 0
-68C:\Kriv\IT\Bookville\node_modules\cosmiconfig\dist\ExplorerBase.d.ts133095265557159345 0
-74C:\Kriv\IT\Bookville\node_modules\css-tree\lib\syntax\pseudo\common\nth.js133095265559300825 0
-74C:\Kriv\IT\Bookville\node_modules\parcel-reporter-clean-dist\test\fixtures133095265556959308 1
-55C:\Kriv\IT\Bookville\node_modules\caniuse-lite\dist\lib133095265566880915 1
-52C:\Kriv\IT\Bookville\node_modules\fastq\test\test.js133095265553476672 0
-51C:\Kriv\IT\Bookville\node_modules\binary-extensions133095265553616716 1
 53C:\Kriv\IT\Bookville\node_modules\buffer-from\LICENSE133095265551449171 0
 59C:\Kriv\IT\Bookville\node_modules\@swc\helpers\package.json133095265551459169 0
 62C:\Kriv\IT\Bookville\node_modules\cosmiconfig\dist\readFile.js133095265554478096 0
@@ -69,7 +69,7 @@
 52C:\Kriv\IT\Bookville\node_modules\svgo\lib\parser.js133095265557289371 0
 53C:\Kriv\IT\Bookville\node_modules\yaml\types\pairs.js133095265556027252 0
 48C:\Kriv\IT\Bookville\node_modules\fclone\LICENSE133095265552567741 0
-53C:\Kriv\IT\Bookville\src\sass\components\_header.scss133099620275926406 0
+53C:\Kriv\IT\Bookville\src\sass\components\_header.scss133101335588227623 0
 59C:\Kriv\IT\Bookville\node_modules\csso\lib\replace\property133095265557049316 1
 69C:\Kriv\IT\Bookville\node_modules\type-fest\source\promise-value.d.ts133095265556819274 0
 55C:\Kriv\IT\Bookville\node_modules\glob-parent\README.md133095265552986586 0
@@ -83,7 +83,7 @@
 57C:\Kriv\IT\Bookville\node_modules\ordered-binary\index.js133095265552327661 0
 59C:\Kriv\IT\Bookville\node_modules\terser\lib\mozilla-ast.js133095265557719487 0
 90C:\Kriv\IT\Bookville\node_modules\@parcel\utils\test\input\sourcemap\referenced-min.js.map133095265559420857 0
-25C:\Kriv\IT\Bookville\dist133099614466771156 1
+25C:\Kriv\IT\Bookville\dist133101335447399730 1
 72C:\Kriv\IT\Bookville\node_modules\source-map\lib\source-map-generator.js133095265555047048 0
 82C:\Kriv\IT\Bookville\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest.c133095265558607642 0
 65C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\regions\RE.js133095265566107610 0
@@ -143,7 +143,7 @@
 65C:\Kriv\IT\Bookville\node_modules\@parcel\utils\test\input\config133095265559440867 1
 40C:\Kriv\IT\Bookville\node_modules\dotenv133095265553346653 1
 52C:\Kriv\IT\Bookville\node_modules\.package-lock.json133099566831174276 0
-45C:\Kriv\IT\Bookville\src\partials\header.html133099596783454120 0
+45C:\Kriv\IT\Bookville\src\partials\header.html133101319919944728 0
 113C:\Kriv\IT\Bookville\node_modules\parcel-reporter-clean-dist\test\fixtures\packageV4\files\embed\embed2\file3.txt133095265558467605 0
 62C:\Kriv\IT\Bookville\node_modules\domutils\lib\legacy.d.ts.map133095265555217083 0
 56C:\Kriv\IT\Bookville\node_modules\json5\lib\unicode.d.ts133095265556257300 0
@@ -161,7 +161,7 @@
 62C:\Kriv\IT\Bookville\node_modules\entities\lib\encode.d.ts.map133095265556057257 0
 45C:\Kriv\IT\Bookville\node_modules\xxhash-wasm133095265554628131 1
 65C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\regions\AE.js133095265554378082 0
-51C:\Kriv\IT\Bookville\src\sass\components\_hero.scss133099565060842104 0
+51C:\Kriv\IT\Bookville\src\sass\components\_hero.scss133101331101902904 0
 80C:\Kriv\IT\Bookville\node_modules\svgo\plugins\removeNonInheritableGroupAttrs.js133095265558169576 0
 62C:\Kriv\IT\Bookville\node_modules\svgo\plugins\inlineStyles.js133095265556839293 0
 59C:\Kriv\IT\Bookville\node_modules\@parcel\core\lib\utils.js133095265560285052 0
@@ -172,11 +172,6 @@
 65C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\regions\UY.js133095265567976184 0
 43C:\Kriv\IT\Bookville\node_modules\lmdb\dist133095265559934993 1
 53C:\Kriv\IT\Bookville\node_modules\terser\bin\uglifyjs133095265552637725 0
-59C:\Kriv\IT\Bookville\node_modules\dotenv-expand\lib\main.js133095265553486688 0
-57C:\Kriv\IT\Bookville\node_modules\@parcel\diagnostic\test133095265552936577 1
-67C:\Kriv\IT\Bookville\node_modules\css-tree\lib\syntax\node\Ratio.js133095265559534901 0
-46C:\Kriv\IT\Bookville\node_modules\svgo\LICENSE133095265551369146 0
-40C:\Kriv\IT\Bookville\node_modules\base-x133095265552597728 1
 24C:\Kriv\IT\Bookville\src133099565060676950 1
 59C:\Kriv\IT\Bookville\node_modules\domutils\lib\stringify.js133095265554138018 0
 53C:\Kriv\IT\Bookville\node_modules\terser\lib\compress133095265558259598 1
@@ -191,7 +186,7 @@
 62C:\Kriv\IT\Bookville\node_modules\posthtml-parser\changelog.md133095265553546690 0
 75C:\Kriv\IT\Bookville\node_modules\svgo\plugins\removeUnknownsAndDefaults.js133095265558387576 0
 78C:\Kriv\IT\Bookville\node_modules\utility-types\dist\functional-helpers.js.map133095265554228036 0
-31C:\Kriv\IT\Bookville\src\images133099565060636865 1
+31C:\Kriv\IT\Bookville\src\images133101320326525160 1
 42C:\Kriv\IT\Bookville\node_modules\htmlnano133095265558847692 1
 57C:\Kriv\IT\Bookville\node_modules\braces\lib\stringify.js133095265554598120 0
 59C:\Kriv\IT\Bookville\node_modules\@parcel\css\node\index.js133095265552717744 0
@@ -206,7 +201,7 @@
 80C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\css-focus-within.js133095265560465096 0
 42C:\Kriv\IT\Bookville\node_modules\entities133095265556227305 1
 45C:\Kriv\IT\Bookville\node_modules\yaml\map.js133095265555257076 0
-33C:\Kriv\IT\Bookville\src\partials133099565060759127 1
+33C:\Kriv\IT\Bookville\src\partials133101323728560079 1
 73C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\dragndrop.js133095265561916829 0
 65C:\Kriv\IT\Bookville\node_modules\@parcel\workers\src\cpuCount.js133095265555077035 0
 84C:\Kriv\IT\Bookville\node_modules\htmlnano\lib\modules\deduplicateAttributeValues.js133095265554298063 0
@@ -222,7 +217,7 @@
 51C:\Kriv\IT\Bookville\node_modules\readdirp\index.js133095265551719218 0
 60C:\Kriv\IT\Bookville\node_modules\entities\lib\maps\xml.json133095265555287093 0
 61C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\agents.js133095265555087041 0
-40C:\Kriv\IT\Bookville\src\sass\components133099565060842104 1
+40C:\Kriv\IT\Bookville\src\sass\components133101323954068064 1
 60C:\Kriv\IT\Bookville\node_modules\htmlnano\docs\package.json133095265557889515 0
 65C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\regions\TG.js133095265567108715 0
 56C:\Kriv\IT\Bookville\node_modules\normalize-path\LICENSE133095265552107606 0
@@ -239,7 +234,9 @@
 42C:\Kriv\IT\Bookville\node_modules\anymatch133095265552906566 1
 67C:\Kriv\IT\Bookville\node_modules\entities\lib\encode-trie.d.ts.map133095265555837224 0
 63C:\Kriv\IT\Bookville\node_modules\source-map\lib\source-node.js133095265555197064 0
-46C:\Kriv\IT\Bookville\src\sass\utils\_vars.scss133099565060932224 0
+46C:\Kriv\IT\Bookville\src\sass\utils\_vars.scss133101332757086335 0
+57C:\Kriv\IT\Bookville\src\sass\components\_advantages.scss133101325310997945 0
+59C:\Kriv\IT\Bookville\node_modules\run-parallel\package.json133095265552087598 0
 64C:\Kriv\IT\Bookville\node_modules\@parcel\core\src\loadDotEnv.js133095265559127754 0
 53C:\Kriv\IT\Bookville\node_modules\detect-libc\LICENSE133095265552677735 0
 65C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\regions\EG.js133095265561946833 0
@@ -248,7 +245,7 @@
 66C:\Kriv\IT\Bookville\node_modules\picocolors\picocolors.browser.js133095265551729222 0
 55C:\Kriv\IT\Bookville\node_modules\posthtml\lib\index.js133095265552207633 0
 42C:\Kriv\IT\Bookville\src\images\books4.jpg133099565060340152 0
-43C:\Kriv\IT\Bookville\src\partials\hero.html133099572408350209 0
+43C:\Kriv\IT\Bookville\src\partials\hero.html133101329284242249 0
 52C:\Kriv\IT\Bookville\node_modules\term-size\index.js133095265553796743 0
 67C:\Kriv\IT\Bookville\node_modules\lmdb\dependencies\lz4\lib\lz4hc.h133095265559624900 0
 59C:\Kriv\IT\Bookville\node_modules\@parcel\utils\src\blob.js133095265553196611 0
@@ -301,7 +298,7 @@
 63C:\Kriv\IT\Bookville\node_modules\weak-lru-cache\dist\index.cjs133095265551539186 0
 51C:\Kriv\IT\Bookville\node_modules\tslib\LICENSE.txt133095265554798163 0
 66C:\Kriv\IT\Bookville\node_modules\css-what\lib\commonjs\parse.d.ts133095265556347317 0
-47C:\Kriv\IT\Bookville\src\images\symbol-defs.svg133099565060636865 0
+47C:\Kriv\IT\Bookville\src\images\symbol-defs.svg133101318640472176 0
 62C:\Kriv\IT\Bookville\node_modules\type-fest\source\except.d.ts133095265555417115 0
 62C:\Kriv\IT\Bookville\node_modules\@parcel\optimizer-terser\src133095265552267654 1
 60C:\Kriv\IT\Bookville\node_modules\node-addon-api\common.gypi133095265552017594 0
@@ -339,6 +336,23 @@
 40C:\Kriv\IT\Bookville\node_modules\@types133095265540783884 1
 39C:\Kriv\IT\Bookville\node_modules\acorn133095265554638125 1
 63C:\Kriv\IT\Bookville\node_modules\nan\nan_typedarray_contents.h133095265556177285 0
+59C:\Kriv\IT\Bookville\node_modules\dotenv-expand\lib\main.js133095265553486688 0
+57C:\Kriv\IT\Bookville\node_modules\@parcel\diagnostic\test133095265552936577 1
+67C:\Kriv\IT\Bookville\node_modules\css-tree\lib\syntax\node\Ratio.js133095265559534901 0
+46C:\Kriv\IT\Bookville\node_modules\svgo\LICENSE133095265551369146 0
+40C:\Kriv\IT\Bookville\node_modules\base-x133095265552597728 1
+79C:\Kriv\IT\Bookville\node_modules\parcel-reporter-clean-dist\src\removeFiles.js133095265555317101 0
+84C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\css-element-function.js133095265560185023 0
+48C:\Kriv\IT\Bookville\node_modules\yaml\util.d.ts133095265558417589 0
+58C:\Kriv\IT\Bookville\node_modules\to-regex-range\README.md133095265552627730 0
+56C:\Kriv\IT\Bookville\node_modules\yaml\browser\scalar.js133095265556989329 0
+82C:\Kriv\IT\Bookville\node_modules\@parcel\core\src\requests\WriteBundlesRequest.js133095265560425078 0
+68C:\Kriv\IT\Bookville\node_modules\cosmiconfig\dist\ExplorerBase.d.ts133095265557159345 0
+74C:\Kriv\IT\Bookville\node_modules\css-tree\lib\syntax\pseudo\common\nth.js133095265559300825 0
+74C:\Kriv\IT\Bookville\node_modules\parcel-reporter-clean-dist\test\fixtures133095265556959308 1
+55C:\Kriv\IT\Bookville\node_modules\caniuse-lite\dist\lib133095265566880915 1
+52C:\Kriv\IT\Bookville\node_modules\fastq\test\test.js133095265553476672 0
+51C:\Kriv\IT\Bookville\node_modules\binary-extensions133095265553616716 1
 56C:\Kriv\IT\Bookville\node_modules\is-arrayish\.npmignore133095265551749239 0
 85C:\Kriv\IT\Bookville\node_modules\@parcel\runtime-js\lib\helpers\browser\js-loader.js133095265556417332 0
 54C:\Kriv\IT\Bookville\node_modules\nullthrows\README.md133095265553406658 0
@@ -556,7 +570,7 @@
 57C:\Kriv\IT\Bookville\node_modules\terser\bin\package.json133095265558377580 0
 65C:\Kriv\IT\Bookville\node_modules\css-tree\lib\parser\sequence.js133095265559644933 0
 65C:\Kriv\IT\Bookville\node_modules\nan\nan_converters_pre_43_inl.h133095265553256632 0
-47C:\Kriv\IT\Bookville\dist\index.975ef6c8.js.map133099611527275609 0
+47C:\Kriv\IT\Bookville\dist\index.975ef6c8.js.map133101333859841413 0
 72C:\Kriv\IT\Bookville\node_modules\type-fest\source\conditional-keys.d.ts133095265554618113 0
 72C:\Kriv\IT\Bookville\node_modules\css-tree\lib\syntax\node\StyleSheet.js133095265559724926 0
 50C:\Kriv\IT\Bookville\node_modules\modern-normalize133095265552437687 1
@@ -584,17 +598,6 @@
 56C:\Kriv\IT\Bookville\node_modules\dom-serializer\LICENSE133095265551429151 0
 48C:\Kriv\IT\Bookville\node_modules\node-gyp-build133095265553596700 1
 65C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\regions\GP.js133095265563141393 0
-64C:\Kriv\IT\Bookville\node_modules\fast-glob\out\types\index.d.ts133095265557509433 0
-65C:\Kriv\IT\Bookville\node_modules\@parcel\utils\src\bundle-url.js133095265553506700 0
-60C:\Kriv\IT\Bookville\node_modules\@parcel\compressor-raw\src133095265552277693 1
-76C:\Kriv\IT\Bookville\node_modules\lmdb\node_modules\node-addon-api\nothing.c133095265551329143 0
-56C:\Kriv\IT\Bookville\node_modules\yaml\browser\schema.js133095265557269373 0
-46C:\Kriv\IT\Bookville\node_modules\run-parallel133095265552417679 1
-81C:\Kriv\IT\Bookville\node_modules\@swc\helpers\lib\_class_apply_descriptor_set.js133095265555447147 0
-118C:\Kriv\IT\Bookville\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\side-effects-false\package.json133095265559480860 0
-66C:\Kriv\IT\Bookville\node_modules\node-gyp-build-optional-packages133095265553596700 1
-109C:\Kriv\IT\Bookville\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node\parcel_sourcemap_wasm.js133095265554997026 0
-113C:\Kriv\IT\Bookville\node_modules\parcel-reporter-clean-dist\test\fixtures\packageV1\files\embed\embed2\file3.txt133095265558269608 0
 82C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\css-color-function.js133095265560035004 0
 84C:\Kriv\IT\Bookville\node_modules\@swc\helpers\src\_class_apply_descriptor_update.js133095265559380859 0
 74C:\Kriv\IT\Bookville\node_modules\css-tree\lib\syntax\node\UnicodeRange.js133095265559844951 0
@@ -981,6 +984,9 @@
 70C:\Kriv\IT\Bookville\node_modules\v8-compile-cache\v8-compile-cache.js133095265551709225 0
 58C:\Kriv\IT\Bookville\node_modules\nth-check\lib\index.d.ts133095265556507372 0
 60C:\Kriv\IT\Bookville\node_modules\utility-types\CHANGELOG.md133095265555037055 0
+93C:\Kriv\IT\Bookville\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\@scope133095265553436663 1
+65C:\Kriv\IT\Bookville\node_modules\type-fest\source\utilities.d.ts133095265557469429 0
+85C:\Kriv\IT\Bookville\node_modules\posthtml\node_modules\posthtml-parser\dist\index.js133095265552297660 0
 85C:\Kriv\IT\Bookville\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_dump.1133095265556467347 0
 53C:\Kriv\IT\Bookville\node_modules\lmdb\dict\dict2.txt133095265560135021 0
 87C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\intersectionobserver-v2.js133095265564106877 0
@@ -989,9 +995,6 @@
 55C:\Kriv\IT\Bookville\node_modules\utility-types\LICENSE133095265551349166 0
 65C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\regions\NP.js133095265565379077 0
 59C:\Kriv\IT\Bookville\node_modules\supports-color\browser.js133095265551709225 0
-93C:\Kriv\IT\Bookville\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\@scope133095265553436663 1
-65C:\Kriv\IT\Bookville\node_modules\type-fest\source\utilities.d.ts133095265557469429 0
-85C:\Kriv\IT\Bookville\node_modules\posthtml\node_modules\posthtml-parser\dist\index.js133095265552297660 0
 62C:\Kriv\IT\Bookville\node_modules\postcss-value-parser\LICENSE133095265551389144 0
 60C:\Kriv\IT\Bookville\node_modules\utility-types\package.json133095265553716726 0
 55C:\Kriv\IT\Bookville\node_modules\terser\tools\exit.cjs133095265553226627 0
@@ -1034,9 +1037,6 @@
 70C:\Kriv\IT\Bookville\node_modules\utility-types\dist\mapped-types.d.ts133095265555897225 0
 65C:\Kriv\IT\Bookville\node_modules\@parcel\package-manager\LICENSE133095265551489172 0
 72C:\Kriv\IT\Bookville\node_modules\utility-types\dist\mapped-types.js.map133095265554648157 0
-55C:\Kriv\IT\Bookville\node_modules\htmlparser2\README.md133095265555167056 0
-47C:\Kriv\IT\Bookville\node_modules\svgo\bin\svgo133095265551839249 0
-59C:\Kriv\IT\Bookville\node_modules\caniuse-lite\package.json133095265568439170 0
 69C:\Kriv\IT\Bookville\node_modules\utility-types\dist\utility-types.js133095265553466676 0
 76C:\Kriv\IT\Bookville\node_modules\type-fest\source\require-at-least-one.d.ts133095265556939300 0
 56C:\Kriv\IT\Bookville\node_modules\lmdb\dependencies\lmdb133095265552237644 1
@@ -1196,7 +1196,7 @@
 44C:\Kriv\IT\Bookville\node_modules\terser\lib133095265558329610 1
 48C:\Kriv\IT\Bookville\node_modules\terser\LICENSE133095265551719218 0
 77C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\tabindex-attr.js133095265566981797 0
-43C:\Kriv\IT\Bookville\dist\logo.c493797d.png133099611527225599 0
+43C:\Kriv\IT\Bookville\dist\logo.c493797d.png133101333859196173 0
 55C:\Kriv\IT\Bookville\node_modules\error-ex\package.json133095265551429151 0
 48C:\Kriv\IT\Bookville\node_modules\terser\main.js133095265557589446 0
 62C:\Kriv\IT\Bookville\node_modules\@parcel\workers\lib\types.js133095265557479428 0
@@ -1218,9 +1218,9 @@
 78C:\Kriv\IT\Bookville\node_modules\css-select\lib\pseudo-selectors\pseudos.d.ts133095265557199361 0
 56C:\Kriv\IT\Bookville\node_modules\nth-check\lib\parse.js133095265553806770 0
 46C:\Kriv\IT\Bookville\node_modules\terser\tools133095265558607642 1
-57C:\Kriv\IT\Bookville\node_modules\terser\tools\props.html133095265553536687 0
-61C:\Kriv\IT\Bookville\node_modules\@parcel\events\src\index.js133095265554158025 0
 65C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\regions\BN.js133095265558747664 0
+61C:\Kriv\IT\Bookville\node_modules\@parcel\events\src\index.js133095265554158025 0
+57C:\Kriv\IT\Bookville\node_modules\terser\tools\props.html133095265553536687 0
 54C:\Kriv\IT\Bookville\node_modules\glob-parent\index.js133095265551759219 0
 72C:\Kriv\IT\Bookville\node_modules\terser\node_modules\commander\index.js133095265551937571 0
 55C:\Kriv\IT\Bookville\node_modules\lmdb\dependencies\lz4133095265555167056 1
@@ -1310,8 +1310,8 @@
 55C:\Kriv\IT\Bookville\node_modules\msgpackr\package.json133095265555507134 0
 65C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\regions\MP.js133095265564895438 0
 61C:\Kriv\IT\Bookville\node_modules\cosmiconfig\dist\index.d.ts133095265557389410 0
-62C:\Kriv\IT\Bookville\node_modules\svgo\plugins\minifyStyles.js133095265557089340 0
 92C:\Kriv\IT\Bookville\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-test.cmd133095265568696896 0
+62C:\Kriv\IT\Bookville\node_modules\svgo\plugins\minifyStyles.js133095265557089340 0
 76C:\Kriv\IT\Bookville\node_modules\htmlnano\lib\modules\collapseWhitespace.js133095265553806770 0
 52C:\Kriv\IT\Bookville\node_modules\fclone\.travis.yml133095265554468088 0
 70C:\Kriv\IT\Bookville\node_modules\htmlparser2\lib\FeedHandler.d.ts.map133095265554208026 0
@@ -1358,7 +1358,7 @@
 50C:\Kriv\IT\Bookville\node_modules\nan\CHANGELOG.md133095265557019325 0
 53C:\Kriv\IT\Bookville\node_modules\has-flag\index.d.ts133095265551749239 0
 62C:\Kriv\IT\Bookville\node_modules\source-map\lib\quick-sort.js133095265554568121 0
-45C:\Kriv\IT\Bookville\dist\hero@1.dd75c6da.jpg133099611527389685 0
+45C:\Kriv\IT\Bookville\dist\hero@1.dd75c6da.jpg133101333859718694 0
 61C:\Kriv\IT\Bookville\node_modules\svgo\plugins\removeXMLNS.js133095265558557624 0
 60C:\Kriv\IT\Bookville\node_modules\svgo\plugins\reusePaths.js133095265558627636 0
 62C:\Kriv\IT\Bookville\node_modules\node-releases\data\processed133095265551846041 1
@@ -1394,6 +1394,9 @@
 67C:\Kriv\IT\Bookville\node_modules\@parcel\packager-css\package.json133095265552926556 0
 56C:\Kriv\IT\Bookville\node_modules\svgo\lib\svgo\tools.js133095265559047733 0
 60C:\Kriv\IT\Bookville\node_modules\nullthrows\nullthrows.d.ts133095265552107606 0
+55C:\Kriv\IT\Bookville\node_modules\htmlparser2\README.md133095265555167056 0
+47C:\Kriv\IT\Bookville\node_modules\svgo\bin\svgo133095265551839249 0
+59C:\Kriv\IT\Bookville\node_modules\caniuse-lite\package.json133095265568439170 0
 88C:\Kriv\IT\Bookville\node_modules\dom-serializer\node_modules\entities\lib\maps\xml.json133095265554698144 0
 57C:\Kriv\IT\Bookville\node_modules\fill-range\package.json133095265551419152 0
 57C:\Kriv\IT\Bookville\node_modules\supports-color\index.js133095265552077610 0
@@ -1584,7 +1587,6 @@
 96C:\Kriv\IT\Bookville\node_modules\@parcel\core\test\fixtures\custom-targets-distdir\package.json133095265560535096 0
 55C:\Kriv\IT\Bookville\node_modules\run-parallel\index.js133095265551719218 0
 54C:\Kriv\IT\Bookville\node_modules\run-parallel\LICENSE133095265551359156 0
-59C:\Kriv\IT\Bookville\node_modules\run-parallel\package.json133095265552087598 0
 53C:\Kriv\IT\Bookville\node_modules\reusify\.travis.yml133095265552087598 0
 51C:\Kriv\IT\Bookville\node_modules\immutable\LICENSE133095265551419152 0
 57C:\Kriv\IT\Bookville\node_modules\picocolors\package.json133095265552527737 0
@@ -1811,8 +1813,6 @@
 75C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\input-range.js133095265564046847 0
 51C:\Kriv\IT\Bookville\node_modules\path-type\license133095265552537708 0
 53C:\Kriv\IT\Bookville\node_modules\path-type\readme.md133095265552966561 0
-88C:\Kriv\IT\Bookville\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-test133095265568696896 0
-82C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\orientation-sensor.js133095265565508985 0
 55C:\Kriv\IT\Bookville\node_modules\parent-module\license133095265552107606 0
 58C:\Kriv\IT\Bookville\node_modules\escalade\sync\index.d.ts133095265554288047 0
 70C:\Kriv\IT\Bookville\node_modules\parcel-reporter-clean-dist\.circleci133095265558557624 1
@@ -2054,6 +2054,8 @@
 110C:\Kriv\IT\Bookville\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\build-test.js133095265552187638 0
 92C:\Kriv\IT\Bookville\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional133095265568696896 0
 101C:\Kriv\IT\Bookville\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages133095265568666862 0
+88C:\Kriv\IT\Bookville\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-test133095265568696896 0
+82C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\orientation-sensor.js133095265565508985 0
 51C:\Kriv\IT\Bookville\node_modules\commander\typings133095265554358075 1
 92C:\Kriv\IT\Bookville\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-test.ps1133095265568696896 0
 80C:\Kriv\IT\Bookville\node_modules\caniuse-lite\data\features\text-size-adjust.js133095265567068729 0
@@ -4234,7 +4236,6 @@
 44C:\Kriv\IT\Bookville\assets\how-it-works.png133095260684287365 0
 103C:\Kriv\IT\Bookville\node_modules\@parcel\node-resolver-core\test\fixture\packages\source-alias\dist.js133095265556497368 0
 104C:\Kriv\IT\Bookville\node_modules\@parcel\node-resolver-core\test\fixture\packages\source-alias\other.js133095265558647644 0
-61C:\Kriv\IT\Bookville\node_modules\@parcel\events\src\types.js133095265554588120 0
 97C:\Kriv\IT\Bookville\node_modules\@parcel\node-resolver-core\test\fixture\packages\source\dist.js133095265556617389 0
 102C:\Kriv\IT\Bookville\node_modules\@parcel\node-resolver-core\test\fixture\packages\source\package.json133095265559734937 0
 95C:\Kriv\IT\Bookville\node_modules\@parcel\graph\test\integration\adjacency-list-shared-array.js133095265551977587 0
@@ -4321,6 +4322,7 @@
 72C:\Kriv\IT\Bookville\node_modules\@parcel\events\test\Disposable.test.js133095265552936577 0
 74C:\Kriv\IT\Bookville\node_modules\@parcel\events\test\ValueEmitter.test.js133095265555117042 0
 62C:\Kriv\IT\Bookville\node_modules\@parcel\events\src\errors.js133095265553626715 0
+61C:\Kriv\IT\Bookville\node_modules\@parcel\events\src\types.js133095265554588120 0
 68C:\Kriv\IT\Bookville\node_modules\@parcel\events\src\ValueEmitter.js133095265554987022 0
 66C:\Kriv\IT\Bookville\node_modules\@parcel\events\lib\Disposable.js133095265551917560 0
 62C:\Kriv\IT\Bookville\node_modules\@parcel\events\lib\errors.js133095265553376655 0
@@ -4705,11 +4707,11 @@
 47C:\Kriv\IT\Bookville\node_modules\.bin\svgo.ps1133095265568676874 0
 49C:\Kriv\IT\Bookville\node_modules\.bin\terser.cmd133095265568686892 0
 49C:\Kriv\IT\Bookville\node_modules\.bin\terser.ps1133095265568686892 0
-43C:\Kriv\IT\Bookville\dist\index.975ef6c8.js133099611527245589 0
-44C:\Kriv\IT\Bookville\dist\index.b07a87f3.css133099614466731152 0
-48C:\Kriv\IT\Bookville\dist\index.b07a87f3.css.map133099614466741152 0
-36C:\Kriv\IT\Bookville\dist\index.html133099611527753313 0
-50C:\Kriv\IT\Bookville\dist\symbol-defs.a8b2e413.svg133099611527893341 0
+43C:\Kriv\IT\Bookville\dist\index.975ef6c8.js133101333859841413 0
+44C:\Kriv\IT\Bookville\dist\index.b07a87f3.css133101335447247526 0
+48C:\Kriv\IT\Bookville\dist\index.b07a87f3.css.map133101335447247526 0
+36C:\Kriv\IT\Bookville\dist\index.html133101333860068949 0
+50C:\Kriv\IT\Bookville\dist\symbol-defs.a8b2e413.svg133101333860448205 0
 53C:\Kriv\IT\Bookville\assets\actions-config-step-1.png133095260683974748 0
 53C:\Kriv\IT\Bookville\assets\actions-config-step-2.png133095260684131113 0
 45C:\Kriv\IT\Bookville\assets\repo-settings.png133095260684443526 0

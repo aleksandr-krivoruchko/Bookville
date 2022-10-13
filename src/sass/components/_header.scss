@@ -1,20 +1,28 @@
 .header { 
 padding: 12px 0 18px 0;
 border-bottom: 1px solid #CDCDCD;
+	@media screen and (min-width: $tablet) {
+	padding: 50px 0 28px 0;
+}
+	@media screen and (min-width: $desktop) {
+	padding: 70px 0 28px 0;
+}
+
+
 
 &__container {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	// @media screen and (min-width: 768px){
+	// @media screen and (min-width: $tablet){
 	// 	justify-content: space-around;
 	// }
 }
 
 &__item {
 	padding: 0 10px;
-		  @media screen and (min-width: 768px) {
+	@media screen and (min-width: $tablet) {
 	padding: 0 15px;
 }
 
@@ -23,25 +31,38 @@ border-bottom: 1px solid #CDCDCD;
 &__icon {
 	width: 20px;
 	height: 20px;
-	fill: #887569;
+	fill: $header-icon-color;
 	cursor: pointer;
-	  @media screen and (min-width: 768px) {
+	  @media screen and (min-width: $tablet) {
 	width: 25px;
 	height: 25px;
 }
-
+	  @media screen and (min-width: $desktop) {
+	width: 30px;
+	height: 30px;
+}
 }
 
 &__phone {
 	display: none;
+
+	svg{
+	width: 16px;
+	height: 16px;
+	}
+
 	p {
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 22px;
+	font-size: 14px;
+	line-height: 1.22;
 	color: $header-tel-color;
 	margin-left: 13px;
+	@media screen and (min-width: $desktop) {
+	font-size: 18px;
+}
+
 	}
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
 	display: flex;
 	align-items: center;
 }
@@ -49,7 +70,7 @@ border-bottom: 1px solid #CDCDCD;
 
 &__left-menu {
 	display: flex;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
 	display: none;
 }
 }
@@ -58,25 +79,32 @@ border-bottom: 1px solid #CDCDCD;
 display: flex;
 .header__item:first-child{
 display: none;
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
 display: block;
 }
 }
 }
-
 }
 
 
 
 .logo { 
-	width: 96px;
-	height: auto;
+	img{
+	// 	width: 96px;
+	// height: auto;
 	cursor: pointer;
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $tablet) {
 position: absolute;
 left: 50%;
+top: -40px;
 transform: translate(-50%);
+// width: 120px;
 }
+@media screen and (min-width: $desktop) {
+// width: 155px;
+top: -60px;
+}
+	}
 }
 
 

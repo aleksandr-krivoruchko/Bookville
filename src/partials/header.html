@@ -1,41 +1,57 @@
 <header class="header">
   <div class="container header__container">
-    <div class="header__phone">
+    <a class="header__phone">
       <svg class="header__icon">
-        <use href="./images/symbol-defs.svg#icon-phone"></use>
+        <use href="images/symbol-defs.svg#icon-phone"></use>
       </svg>
       <p>+7 999 140 00 00</p>
-    </div>
+    </a>
 
     <ul class="header__left-menu">
       <li class="header__item">
         <svg class="header__icon">
-          <use href="./images/symbol-defs.svg#icon-th-menu"></use>
+          <use href="images/symbol-defs.svg#icon-th-menu"></use>
         </svg>
       </li>
       <li class="header__item">
         <svg class="header__icon">
-          <use href="./images/symbol-defs.svg#icon-dandruff"></use>
+          <use href="images/symbol-defs.svg#icon-dandruff"></use>
         </svg>
       </li>
     </ul>
 
-    <img src="./images/logo.png" class="logo" />
+    <a href="" lang="en" class="logo">
+      <picture>
+        <source
+          srcset="images/logo-mobile.png 1x"
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <source
+          srcset="images/logo-desktop.png 1x"
+          media="(min-width: 768px)"
+        />
+        <img
+          class="logo__img"
+          src="images/logo-mobile.png"
+          alt="Logo"
+        /> </picture
+    ></a>
 
     <ul class="header__right-menu">
       <li class="header__item">
         <svg class="header__icon">
-          <use href="./images/symbol-defs.svg#icon-dandruff"></use>
+          <use href="images/symbol-defs.svg#icon-dandruff"></use>
         </svg>
       </li>
       <li class="header__item">
         <svg class="header__icon">
-          <use href="./images/symbol-defs.svg#icon-heart"></use>
+          <use href="images/symbol-defs.svg#icon-heart"></use>
         </svg>
       </li>
       <li class="header__item">
         <svg class="header__icon">
-          <use href="./images/symbol-defs.svg#icon-cart"></use>
+          <use href="images/symbol-defs.svg#icon-cart"></use>
         </svg>
       </li>
     </ul>
