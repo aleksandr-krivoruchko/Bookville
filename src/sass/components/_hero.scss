@@ -8,6 +8,7 @@
   object-fit: cover;
 }
 &__container {
+	position: relative;
 	height: 178px;
 	@media screen and (min-width: $tablet){
 		height: 320px;
@@ -15,6 +16,18 @@
 	@media screen and (min-width: $desktop){
 		height: 560px;
 	}
+}
+&__icon{
+	position: absolute;
+	top: 50%;
+	width: 20px;
+	height: 20px;
+}
+&__icon--left{
+	left: -10px;
+}
+&__icon--right{
+right: 0;
 }
 }
 .btn {
