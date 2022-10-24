@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <include src="./partials/header.html"></include>
-    <!-- <include src="./partials/main.html"></include>
-    <include src="./partials/footer.html"></include> -->
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/advantages.html"></include>
+    <header class="header">
+      <include src="./partials/header.html"></include>
+    </header>
+
+    <main class="main">
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/advantages.html"></include>
+    </main>
+
+    <footer src="./partials/footer.html"></footer>
 
     <script type="module" src="./index.js"></script>
   </body>

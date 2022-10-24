@@ -8,6 +8,12 @@
   object-fit: cover;
 }
 &__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid red;
 	position: relative;
 	height: 178px;
 	@media screen and (min-width: $tablet){
@@ -22,13 +28,17 @@
 	top: 50%;
 	width: 20px;
 	height: 20px;
+	cursor: pointer;
 }
 &__icon--left{
-	left: -10px;
+	left: 0px;
 }
 &__icon--right{
-right: 0;
+right: 0px;
 }
+&__icon:hover{
+		stroke: black;
+	}
 }
 .btn {
 position: absolute;
