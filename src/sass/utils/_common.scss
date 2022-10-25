@@ -55,16 +55,16 @@ body {
   margin: 0 auto;
 	border: 1px solid green;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
   }
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
     padding-left: 30px;
     padding-right: 30px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
     padding-left: 120px;
     padding-right: 120px;
   }

@@ -1,4 +1,4 @@
-.hero{
+.hero {
 	position: relative;
 	padding: 20px 0;
 	&__img {
@@ -8,11 +8,11 @@
   object-fit: cover;
 }
 &__container {
+		position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	border: 1px solid red;
-	position: relative;
 	height: 178px;
 	@media screen and (min-width: $tablet){
 		height: 320px;
@@ -30,9 +30,16 @@
 }
 &__icon--left{
 	left: 0px;
+	@media screen and (min-width: $desktop){
+	left: 70px;
+	}
 }
-&__icon--right{
-right: 0px;
+	&__icon--right{
+	right: 0px;
+	@media screen and (min-width: $desktop){
+	right: 70px;
+	}
+
 }
 &__icon:hover{
 		stroke: black;
@@ -91,6 +98,10 @@ height: 9px;
 @media screen and (min-width: $tablet){
 width: 14px;
 height: 14px;
+	}
+	@media screen and (min-width: $desktop){
+width: 20px;
+height: 20px;
 	}
 	}
 }
