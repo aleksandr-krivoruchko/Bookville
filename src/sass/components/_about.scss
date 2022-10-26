@@ -1,0 +1,72 @@
+.about {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: $accent-bgc-light;
+	@media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+	&__title {
+		font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.25;
+	color: $title-accent-color;
+	margin-bottom: 18px;
+  @media screen and (min-width: $tablet) {
+		margin-bottom: 9px;
+	text-align: left;
+	font-size: 18px;
+  }
+	}
+	&__subtitle {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.22;
+	color: $title-color;
+	margin-bottom: 14px;
+	@media screen and (min-width: $tablet) {
+	font-size: 24px;
+	text-align: left;
+	margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+	font-size: 36px;
+		margin-bottom: 34px;
+  }
+	}
+	&__wrapper {
+  @media screen and (min-width: $tablet) {
+	display: flex;
+	justify-content: space-around;
+  }
+	}
+	&__text {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: left;
+	color: $main-text-color;
+	margin-bottom: 10px;
+	
+	@media screen and (min-width: $tablet) {
+		&:not(:nth-child(3n)) {
+		margin-right: 20px;
+	}
+  }
+	}
+	&__icons { 
+		text-align: center;
+		@media screen and (min-width: $tablet) {
+		display: none;  
+	}
+}
+	&__icon {
+		width: 4px;
+		height: 4px;
+		&:not(:last-child) {
+		margin-right: 5px;
+	}
+	}
+}
