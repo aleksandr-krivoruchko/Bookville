@@ -1,0 +1,35 @@
+.popular {
+padding-top: 20px;
+	&__title {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.22;
+	color: $title-color;
+	text-align: center;
+	margin-bottom: 18px;
+	}
+	&__books {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+}
+.btn-see-all {
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	&__text{
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #675B56;
+	}
+	&__icon{
+		width: 5px;
+		height: 5px;
+	}
+		@media screen and (min-width: $tablet) {
+display: none;  }
+
+}

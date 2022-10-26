@@ -1,0 +1,86 @@
+.card {
+width: 137px;
+margin: 0 auto;
+// flex: 0 0 137px;
+background: $card-main-bgc;
+border-radius: 5px;
+list-style: none;
+padding: 7px;
+margin-right: 5px;
+	&__wrapper {
+		position: relative;
+	}
+
+		&__heart {
+		position: absolute;
+		right: 0;
+		width: 29px;
+		height: 29px;
+		border-radius: 50%;
+		background-color: #F3E4DE;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+
+		&__icon-heart {
+		width: 15px;
+		height: 15px;
+		}
+		&__deposit {
+		position: absolute;
+		top: -20px;
+		left: 0;
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		background-color: $card-deposit-bgc;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+		&__thumb {
+		padding-left: 12px;
+		padding-right: 12px;
+		margin-bottom: 6px;
+		}
+		&__img{
+		}
+		&__info {
+		}
+
+		&__author {
+		font-weight: 300;
+		font-size: 10px;
+		line-height: 1.2;
+		color: $card-subtitle-color-dark;
+		margin-bottom: 3px;
+		}
+
+		&__book {
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 1.23;
+		color: $card-title-color;
+		margin-bottom: 15px;
+		}
+
+		&__price {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.21;
+		color: $card-price-color;
+		}
+
+		&__icon-cart {
+			position: absolute;
+			right: 5px;
+			bottom: 0;
+			width: 20px;
+			height: 20px;
+		}
+}

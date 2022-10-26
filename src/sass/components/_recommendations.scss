@@ -1,0 +1,21 @@
+.recommendations {
+padding-top: 20px;
+	&__title {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.22;
+	color: $title-color;
+	text-align: center;
+	margin-bottom: 18px;
+		@media screen and (min-width: $tablet) {
+	font-size: 36px;
+  }
+
+	}
+	&__books {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+}
