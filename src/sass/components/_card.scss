@@ -1,16 +1,23 @@
 .card {
-width: 137px;
-margin: 0 auto;
-// flex: 0 0 137px;
-background: $card-main-bgc;
-border-radius: 5px;
-list-style: none;
-padding: 7px;
-margin-right: 5px;
+	height: 100%;
+	margin: 0 auto;
+	flex: 0 0 calc(45% - 5px);
+	background: $card-main-bgc;
+	border-radius: 5px;
+	list-style: none;
+	padding: 7px;
+	@media screen and (min-width: $tablet) {
+	flex: 0 0 calc(30% - 10px);
+	}
+	@media screen and (min-width: $desktop) {
+	flex: 0 0 calc(23% - 10px);
+	padding: 20px;
+	}
+
+
 	&__wrapper {
 		position: relative;
 	}
-
 		&__heart {
 		position: absolute;
 		right: 0;
@@ -21,11 +28,24 @@ margin-right: 5px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		}
+		cursor: pointer;
+		@media screen and (min-width: $tablet) {
+		width: 40px;
+		height: 40px;
+  }
+}
 
 		&__icon-heart {
 		width: 15px;
 		height: 15px;
+		&:active{
+		stroke: red;
+		}
+		@media screen and (min-width: $tablet) {
+		width: 20px;
+		height: 20px;
+  }
+
 		}
 		&__deposit {
 		position: absolute;
@@ -37,11 +57,17 @@ margin-right: 5px;
 		background-color: $card-deposit-bgc;
 		font-weight: 500;
 		font-size: 12px;
-		line-height: 15px;
+		line-height: 1.22;
 		color: #fff;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@media screen and (min-width: $tablet) {
+		width: 50px;
+		height: 50px;
+		font-size: 18px;
+
+  }
 		}
 		&__thumb {
 		padding-left: 12px;
@@ -59,6 +85,9 @@ margin-right: 5px;
 		line-height: 1.2;
 		color: $card-subtitle-color-dark;
 		margin-bottom: 3px;
+			@media screen and (min-width: $tablet) {
+		font-size: 14px;
+  }
 		}
 
 		&__book {
@@ -67,6 +96,10 @@ margin-right: 5px;
 		line-height: 1.23;
 		color: $card-title-color;
 		margin-bottom: 15px;
+		@media screen and (min-width: $tablet) {
+		font-size: 18px;
+  }
+
 		}
 
 		&__price {
@@ -74,6 +107,10 @@ margin-right: 5px;
 		font-size: 14px;
 		line-height: 1.21;
 		color: $card-price-color;
+		@media screen and (min-width: $tablet) {
+		font-size: 18px;
+  }
+
 		}
 
 		&__icon-cart {
@@ -82,5 +119,14 @@ margin-right: 5px;
 			bottom: 0;
 			width: 20px;
 			height: 20px;
+			cursor: pointer;
+			&:active{
+			stroke: red;
+			}
+		@media screen and (min-width: $tablet) {
+		width: 26px;
+		height: 26px;
+  }
+
 		}
 }

@@ -1,23 +1,17 @@
 .header { 
 padding: 12px 0 18px 0;
-border-bottom: 1px solid #CDCDCD;
 	@media screen and (min-width: $tablet) {
 	padding: 50px 0 28px 0;
 }
 	@media screen and (min-width: $desktop) {
 	padding: 70px 0 28px 0;
 }
-
-
-
 &__container {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	// @media screen and (min-width: $tablet){
-	// 	justify-content: space-around;
-	// }
+	border-bottom: 1px solid #CDCDCD;
 }
 
 &__item {
@@ -25,7 +19,6 @@ border-bottom: 1px solid #CDCDCD;
 	@media screen and (min-width: $tablet) {
 	padding: 0 15px;
 }
-
 }
 
 &__icon {
@@ -33,6 +26,9 @@ border-bottom: 1px solid #CDCDCD;
 	height: 20px;
 	fill: $header-icon-color;
 	cursor: pointer;
+		&:active{
+		stroke: red;
+	}
 	  @media screen and (min-width: $tablet) {
 	width: 25px;
 	height: 25px;

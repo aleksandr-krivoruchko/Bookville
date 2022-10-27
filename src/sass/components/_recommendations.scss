@@ -7,15 +7,31 @@ padding-top: 20px;
 	color: $title-color;
 	text-align: center;
 	margin-bottom: 18px;
-		@media screen and (min-width: $tablet) {
+	@media screen and (min-width: $tablet) {
 	font-size: 36px;
   }
-
 	}
 	&__books {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		gap: 10px;
+		overflow: auto;
 		margin-bottom: 15px;
 	}
+}
+.btn-see-all {
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	&__text{
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #675B56;
+	}
+	&__icon{
+		width: 5px;
+		height: 5px;
+	}
+		@media screen and (min-width: $tablet) {
+	display: none;  }
 }

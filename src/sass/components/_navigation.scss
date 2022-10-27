@@ -1,0 +1,75 @@
+.navigation {
+	display: none;
+	@media screen and (min-width: $desktop) {
+display: block;
+}
+
+&__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 0px 0 0px;
+
+}
+
+&__list {
+display: flex;
+align-items: center;
+}
+
+&__item {
+	&:not(:last-child){
+		margin-right: 35px;
+	}
+}
+
+&__link {
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+color: $nav-text-main-color;
+	&:hover,
+	&:focus{
+		color: $nav-text-accent-color;
+		border-bottom: 1px solid $nav-text-accent-color;
+	}
+}
+
+&__icon {
+width: 25px;
+height: 25px;
+}
+&__social{
+	display: flex;
+	justify-content: space-between;
+align-items: center;
+}
+
+&__lang > select {
+border: none;
+outline: none;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #787878;
+}
+}
+
+
+.social {
+display: flex;
+margin-right: 10px;
+&__item {
+	&:not(:last-child){
+		margin-right: 20px;
+	}
+}
+
+&__link {
+}
+
+&__icon {
+	width: 20px;
+	height: 20px;
+}
+}
