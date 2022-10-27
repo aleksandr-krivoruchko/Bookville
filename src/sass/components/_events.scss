@@ -3,6 +3,23 @@ padding-top: 20px;
 padding-bottom: 20px;
 text-align: center;
 
+&__container {
+	@media screen and (min-width: $tablet){
+display: flex;
+	}
+
+}
+
+&__content {
+	width: 50%;
+&>.events__btn{
+display: none;
+@media screen and (min-width: $tablet){
+display: flex;
+	}
+}
+}
+
 &__title {
 margin-bottom: 15px;
 font-weight: 300;
@@ -19,6 +36,72 @@ line-height: 1.37;
 color: $main-text-color;
 }
 
-&__img {
+&__thumb {
+	width: 50%;
+	&>.events__btn {
+		display: flex;
+		@media screen and (min-width: $tablet){
+display: none;
+	}
+	}
 }
+
+&__img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+}
+
+.events__btn {
+display: block;
+width: 175px;
+height: 41px;
+margin: 0 auto;
+padding: 0;
+border: 1px solid $btn-bgc;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: transparent;
+color: $btn-bgc;
+border-radius: 8px;
+text-transform: uppercase;
+cursor: pointer;
+
+@media screen and (min-width: $tablet){
+width: 232px;
+height: 62px;
+}
+
+&:hover,
+&:focus {
+	background-color: $hero-btn-bgc-hover;
+	border: 1px solid $hero-btn-text-color;
+}
+	&__title {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.25;
+color: $btn-bgc;
+margin-right: 15px;
+
+@media screen and (min-width: $tablet){
+font-size: 16px;
+	}
+	}
+
+	&__icon{
+width: 9px;
+height: 9px;
+@media screen and (min-width: $tablet){
+width: 14px;
+height: 14px;
+	}
+	@media screen and (min-width: $desktop){
+width: 20px;
+height: 20px;
+	}
+	}
 }
