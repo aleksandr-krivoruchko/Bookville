@@ -1,0 +1,24 @@
+.events {
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+
+&__title {
+margin-bottom: 15px;
+font-weight: 300;
+font-size: 18px;
+line-height: 1.22;
+color: $title-color;
+}
+
+&__text {
+margin-bottom: 15px;
+font-weight: 300;
+font-size: 14px;
+line-height: 1.37;
+color: $main-text-color;
+}
+
+&__img {
+}
+}
