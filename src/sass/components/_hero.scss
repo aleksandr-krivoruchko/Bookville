@@ -78,6 +78,9 @@ bottom: 100px;
 &:focus {
 	background-color: $hero-btn-bgc-hover;
 	border: 1px solid $hero-btn-text-color;
+	.btn__icon{
+		transform: scale(1.4);
+	}
 }
 	&__title {
 font-weight: 400;
