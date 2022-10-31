@@ -1,9 +1,7 @@
 .advantages{
 &__list{
-	padding-top: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
-	@media screen and (min-width: $tablet) {
+padding: 15px;
+@media screen and (min-width: $tablet) {
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -17,22 +15,21 @@ align-items: center;
 }
 }
 }
+
 &__item {
 	display: flex;
 	align-items: center;
 	margin-bottom: 15px;
 	@media screen and (min-width: $desktop) {
-		width: 50%;
+	width: 50%;
 	margin-right: 10px;
 }
-
 }
-&__number{
+
+&__number {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-// flex: 0 1 44px;
-// min-height: 44px;
 	min-width: 44px;
 	min-height: 44px;
 	margin-right: 15px;
@@ -46,15 +43,16 @@ align-items: center;
 	line-height: 1.22;
 	color: $advantages-border-color;
 }
-&__title{
+
+&__title {
 	font-weight: 300;
 font-size: 14px;
 line-height: 17px;
 color: $title-color;
+
 @media screen and (min-width: $tablet) {
 font-size: 16px;
   }
-
 @media screen and (min-width: $desktop) {
 font-size: 18px;
   }

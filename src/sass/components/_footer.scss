@@ -1,0 +1,60 @@
+.footer {
+	padding: 20px 0;
+
+
+		&__list {
+			text-align: center;
+			margin: 0 auto;  
+		@media screen and (min-width: $desktop) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		}
+
+		}
+
+		&__item {
+		margin-bottom: 10px;
+		text-align: center;
+		}
+
+		&__link {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: $nav-text-main-color;
+		@media screen and (min-width: $tablet) {
+		font-size: 18px;
+		}
+		}
+		
+		&__phone {
+		display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+		svg {
+		width: 10px;
+		height: 10px;
+		@media screen and (min-width: $tablet) {
+	width: 16px;
+	height: 16px;
+}
+		}
+
+	p {
+	font-weight: 500;
+	font-size: inherit;
+	line-height: 1.22;
+	color: $header-tel-color;
+	margin-left: 13px;
+	}
+  @media screen and (min-width: $desktop) {
+	display: flex;
+	align-items: center;
+}
+}
+&__logo {
+display: inline-block;
+margin-bottom: 20px;
+}
+}

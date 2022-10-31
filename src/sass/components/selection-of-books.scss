@@ -1,7 +1,11 @@
 .selection {
-padding-top: 30px;
+padding-top: 20px;
 padding-bottom: 20px;
 text-align: center;
+		@media screen and (min-width: $desktop){
+			padding-top: 40px;
+padding-bottom: 40px;
+}
 
 		&__title {
 		font-weight: 300;

@@ -1,5 +1,4 @@
 .header { 
-padding: 12px 0 18px 0;
 	@media screen and (min-width: $tablet) {
 	padding: 50px 0 28px 0;
 }
@@ -12,6 +11,7 @@ padding: 12px 0 18px 0;
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #CDCDCD;
+	padding-bottom: 15px;
 }
 
 &__item {
@@ -90,17 +90,8 @@ display: block;
 	height: auto;
 	cursor: pointer;
 	@media screen and (min-width: $tablet) {
-position: absolute;
-left: 50%;
-top: -40px;
-transform: translate(-50%);
-width: 120px;
-}
-@media screen and (min-width: $desktop) {
 width: 155px;
-top: -60px;
 }
-	
 }
 
 
