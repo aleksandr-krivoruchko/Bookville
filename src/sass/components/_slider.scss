@@ -1,0 +1,35 @@
+.itcss {
+  position: relative;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+//   margin-right: auto;
+//   margin-left: auto;
+}
+
+.itcss__wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.itcss__items {
+  display: flex;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.itcss__item {
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.itcss__indicators {
+  display: none;
+}
