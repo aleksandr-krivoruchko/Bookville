@@ -12,4 +12,13 @@ export const refs = {
   heroBtn: document.querySelector('.btn'),
   heroArrowLeft: document.querySelector('.hero__icon--left'),
   heroArrowRight: document.querySelector('.hero__icon--right'),
+
+  //============cart=====================================
+  paymentBtn: document.querySelector('.cart__btn'),
+  paymentTotalPrice: document.querySelector('.cart__total-price span'),
+  increaseBtn: document.querySelectorAll('button[data-action="incr"]'),
+  decreaseBtn: document.querySelectorAll('button[data-action="decr"]'),
+  bookCount: document.querySelectorAll('.cart__book-amount-text'),
+  bookPrice: document.querySelectorAll('.cart__book-price'),
+  bookList: document.querySelector('.cart__list'),
 };
