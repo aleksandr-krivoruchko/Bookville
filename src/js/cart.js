@@ -1,14 +1,5 @@
 import { refs } from './common-ref';
 
-// refs.paymentBtn.addEventListener('click', () => console.log('qqqqqqq'));
-// refs.increaseBtn.addEventListener('click', bookCount);
-// refs.decreaseBtn.addEventListener('click', bookCount);
-
-console.log(refs.paymentTotalPrice.textContent);
-console.log(refs.bookCount);
-console.log(refs.bookPrice);
-console.log(refs.bookList);
-
 const BOOKS = [
   {
     id: 1,
@@ -19,64 +10,80 @@ const BOOKS = [
   },
   {
     id: 2,
-    img: 'http://localhost:1234/book-mob.c771a6fa.jpg',
+    img: 'book-mob.c771a6fa.jpg',
     author: 'Барбара Колорозо',
     name: 'Травля',
     price: 990,
   },
   {
     id: 3,
-    img: 'http://localhost:1234/book-mob.c771a6fa.jpg',
+    img: 'book-mob.c771a6fa.jpg',
+    author: 'Максим Поташев, Павел Ершов',
+    name: 'Правила команды',
+    price: 1190,
+  },
+  {
+    id: 4,
+    img: 'book-mob.c771a6fa.jpg',
     author: 'Максим Поташев, Павел Ершов',
     name: 'Правила команды',
     price: 1190,
   },
 ];
 
-const markup = BOOKS.map(
-  book => `<li class="cart__item" id=${book.id}>
+const itemTemplate = ({
+  id,
+  img,
+  author,
+  name,
+  price,
+}) => `<li class="cart__item" id=${id}>
         <div class="cart__img-wrapper">
-          <img src='${book.img}' alt="book" class="cart__img" />
+          <img src='${img}' alt="book" class="cart__img" />
         </div>
         <div class="cart__book-info">
           <div>
-            <p class="cart__book-info-author">${book.author}</p>
-            <p class="cart__book-info-name">${book.name}</p>
+            <p class="cart__book-info-author">${author}</p>
+            <p class="cart__book-info-name">${name}</p>
           </div>
           <div class="cart__book-wrapper">
             <div class="cart__book-amount">
               <button class="cart__book-amount-btn" data-action="incr">
                 +
               </button>
-              <span class="cart__book-amount-text">1</span>
+              <span class="cart__book-amount-text">0</span>
               <button class="cart__book-amount-btn" data-action="decr">
                 -
               </button>
             </div>
-            <p class="cart__book-price">${book.price} ₽</p>
+            <p class="cart__book-price"><span>${price}</span> ₽</p>
           </div>
         </div>
-      </li>`
-);
+      </li>`;
 
-refs.bookList.insertAdjacentHTML('beforeend', markup.join(''));
+function render() {
+  const markup = BOOKS.map(itemTemplate);
 
-// let count = Number(refs.bookCount.textContent);
-// let price = Number(parseFloat(refs.bookPrice.textContent));
+  refs.bookList.insertAdjacentHTML('beforeend', markup.join(''));
+}
+let q = 0;
 
-// function bookCount(e) {
-//   const text = e.currentTarget.dataset.action;
+function start() {
+  render();
+  refs.bookList.addEventListener('click', onBtnIncreaseClick);
+}
 
-//   if (text === 'incr') {
-//     count += 1;
-//     refs.bookCount.textContent = count;
+function onBtnIncreaseClick(e) {
+  let amount = e.target.parentNode.children[1].textContent;
+  //   amount = '10';
+  console.log(amount);
+  //   const price =
+  //     e.target.parentNode.nextElementSibling.querySelector('span').textContent;
 
-//     refs.bookPrice.textContent = price * count + '₽';
-//   }
-//   if (count !== 0 && text === 'decr') {
-//     count -= 1;
-//     refs.bookCount.textContent = count;
-
-//     refs.bookPrice.textContent = price * count + '₽';
-//   }
-// }
+  if (e.target.dataset.action === 'incr') {
+    q = q + 1;
+  } else {
+  }
+}
+console.log(q);
+start();
