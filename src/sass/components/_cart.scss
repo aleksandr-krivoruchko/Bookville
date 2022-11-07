@@ -133,6 +133,11 @@ margin-bottom: 15px;
 		border-color: red;
 		color: red;
 	}
+				&--disabled:hover {
+		color: #eee;
+		border-color: #eee;
+	}
+
 @media screen and (min-width: $tablet){
 width: 36px;
 height: 36px;

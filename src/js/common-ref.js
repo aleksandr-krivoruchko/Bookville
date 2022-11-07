@@ -21,5 +21,4 @@ export const refs = {
   bookCount: document.querySelectorAll('.cart__book-amount-text'),
   bookPrice: document.querySelectorAll('.cart__book-price'),
   bookList: document.querySelector('.cart__list'),
-  bookListItem: document.querySelectorAll('.cart__list li'),
 };

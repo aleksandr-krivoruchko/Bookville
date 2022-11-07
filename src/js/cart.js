@@ -1,5 +1,5 @@
 import { refs } from './common-ref';
-
+import { bookCounter } from './book-counter';
 const BOOKS = [
   {
     id: 1,
@@ -65,25 +65,7 @@ function render() {
   const markup = BOOKS.map(itemTemplate);
 
   refs.bookList.insertAdjacentHTML('beforeend', markup.join(''));
+  console.log(refs.bookListItems);
 }
-let q = 0;
-
-function start() {
-  render();
-  refs.bookList.addEventListener('click', onBtnIncreaseClick);
-}
-
-function onBtnIncreaseClick(e) {
-  let amount = e.target.parentNode.children[1].textContent;
-  //   amount = '10';
-  console.log(amount);
-  //   const price =
-  //     e.target.parentNode.nextElementSibling.querySelector('span').textContent;
-
-  if (e.target.dataset.action === 'incr') {
-    q = q + 1;
-  } else {
-  }
-}
-console.log(q);
-start();
+render();
+bookCounter();
