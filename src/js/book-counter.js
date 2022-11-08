@@ -1,3 +1,5 @@
+import { refs } from './common-ref.js';
+
 export function bookCounter() {
   const bookListItems = document.querySelectorAll('.cart__list .cart__item');
 
@@ -15,7 +17,9 @@ export function bookCounter() {
     btnIncr.addEventListener('click', e => {
       if (e.target.dataset.action === 'incr') {
         bookAmount.textContent++;
-        price.textContent = price.textContent * bookAmount.textContent;
+        refs.paymentTotalPrice.textContent =
+          Number(refs.paymentTotalPrice.textContent) +
+          Number(price.textContent);
       }
       if (bookAmount.textContent > 0) {
         btnDecr.disabled = false;
@@ -25,6 +29,9 @@ export function bookCounter() {
     btnDecr.addEventListener('click', e => {
       if (e.target.dataset.action === 'decr') {
         bookAmount.textContent--;
+        refs.paymentTotalPrice.textContent =
+          Number(refs.paymentTotalPrice.textContent) -
+          Number(price.textContent);
       }
       if (bookAmount.textContent <= 0) {
         btnDecr.disabled = true;

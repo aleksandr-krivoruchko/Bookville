@@ -8,4 +8,6 @@ refs.headerDandruffRight.addEventListener('click', iconClickHandler);
 refs.headerHeart.addEventListener('click', iconClickHandler);
 refs.headerCart.addEventListener('click', iconClickHandler);
 
-function iconClickHandler(e) {}
+function iconClickHandler(e) {
+  console.log('click');
+}

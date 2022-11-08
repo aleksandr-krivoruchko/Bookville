@@ -1,4 +1,7 @@
-import './js/common-ref';
-import './js/header';
-import './js/hero';
-import './js/cart';
+'use strict';
+
+import './js/common-ref.js';
+import './js/header.js';
+import './js/hero.js';
+import './js/cart.js';
+import './js/popular-books.js';
