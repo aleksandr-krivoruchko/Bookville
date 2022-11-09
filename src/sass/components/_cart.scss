@@ -20,18 +20,18 @@ font-size: 36px;
 }
 
 
-&__item:first-child {
-// display: none;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-color: #373737;
-@media screen and (min-width: $tablet){
-display: flex;
-}
-	@media screen and (min-width: $desktop){
-	}
-}
+// &__item:first-child {
+// // display: none;
+// font-weight: 500;
+// font-size: 16px;
+// line-height: 20px;
+// color: #373737;
+// @media screen and (min-width: $tablet){
+// display: flex;
+// }
+// 	@media screen and (min-width: $desktop){
+// 	}
+// }
 
 &__item:last-child {
 	border-bottom: 0.5px solid #CDCDCD;
@@ -146,19 +146,26 @@ height: 36px;
 
 &__book-amount-text {
 	font-weight: 400;
-font-size: 18px;
+font-size: 16px;
 line-height: 22px;
 text-align: center;
 color: #353535;
 margin-right: 7px;
+@media screen and (min-width: $tablet){
+font-size: 18px;
+	}
+
 }
 
 
 &__book-price {
 	font-weight: 500;
-font-size: 18px;
+font-size: 16px;
 line-height: 22px;
 color: #343434;
+@media screen and (min-width: $tablet){
+font-size: 20px;
+	}
 
 }
 
