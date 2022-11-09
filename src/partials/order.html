@@ -1,0 +1,56 @@
+<div class="container order__container">
+  <h1 class="order__title">Оформление заказа</h1>
+  <p class="order__subtitle">Детали оплаты</p>
+  <form action="" class="form">
+    <input type="text" class="form__input" placeholder="Ваше имя" />
+    <input type="text" class="form__input" placeholder="Ваша фамилия" />
+    <input type="text" class="form__input" placeholder="E-mail" />
+    <input type="text" class="form__input" placeholder="Номер телефона" />
+    <select>
+      <option value="">Страна</option>
+      <option value="">Украина</option>
+      <option value="">Польща</option>
+      <option value="">Румыния</option>
+      <option value="">Молдова</option>
+    </select>
+    <input type="text" class="form__input" placeholder="Улица и т.д." />
+    <input
+      type="text"
+      class="form__input"
+      placeholder="Подъезд, этаж и т.п. "
+    />
+    <input type="text" class="form__input" placeholder="Населенный пункт" />
+    <input type="text" class="form__input" placeholder="Область/регион" />
+    <input type="text" class="form__input" placeholder="Почтовый индекс" />
+
+    <label for="q" class="order__subtitle">Дополнительная информация</label>
+    <textarea name="" id="q" cols="50" rows="5"></textarea>
+
+    <p class="order__subtitle">Способ оплаты</p>
+    <label>
+      <input type="radio" name="payment-method" value="cash" checked />
+      Оплата наличными
+    </label>
+    <label>
+      <input type="radio" name="payment-method" value="transfer" />
+      Оплата переводом
+    </label>
+    <label>
+      <input type="radio" name="payment-method" value="courier" />
+      Наличными курьеру
+    </label>
+    <label>
+      <input type="radio" name="payment-method" value="card" />
+      Оплата банковской картой
+    </label>
+  </form>
+  <p class="order__subtitle">Ваш заказ</p>
+      <ul class="cart__title-list">
+      <li class="cart__item-text">Товар</li>
+      <li class="cart__item-text">Итого</li>
+    </ul>
+    <ul class="cart__list"></ul>
+    <div class="cart__total-wrapper">
+      <p class="cart__total-price">Итого: <span> 0 </span> $</p>
+
+	<button class="cart__btn">ПОДТВЕРДИТЬ ЗАКАЗ</button

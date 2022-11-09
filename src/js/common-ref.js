@@ -18,6 +18,7 @@ export const refs = {
   paymentBtn: document.querySelector('.cart__btn'),
   paymentTotalPrice: document.querySelector('.cart__total-price span'),
   bookList: document.querySelector('.cart__list'),
+  cartMessage: document.querySelector('.cart__message'),
 
   //=========pop books====================
   popBooksList: document.querySelector('.popular__books'),

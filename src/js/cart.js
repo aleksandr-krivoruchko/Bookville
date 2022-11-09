@@ -1,11 +1,15 @@
 import { refs } from './common-ref';
 import { bookCounter } from './book-counter.js';
-import photo_1 from '../images/photo-1.jpg';
-import photo_2 from '../images/photo-2.jpg';
-import photo_3 from '../images/photo-3.jpg';
+// import photo_1 from '../images/photo-1.jpg';
+// import photo_2 from '../images/photo-2.jpg';
+// import photo_3 from '../images/photo-3.jpg';
 
 const savedBooks = localStorage.getItem('booksInCart');
 const booksInCart = JSON.parse(savedBooks);
+
+if (booksInCart) {
+  refs.cartMessage.classList.add('cart__message--none');
+}
 
 refs.headerCartBooksCount.textContent = booksInCart.length;
 

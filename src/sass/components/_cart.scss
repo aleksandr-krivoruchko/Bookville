@@ -1,5 +1,11 @@
 .cart {
+padding-bottom: 20px;
 
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+	}
 &__title {
 font-weight: 300;
 font-size: 18px;
@@ -15,23 +21,46 @@ font-size: 36px;
 	}
 }
 
-&__list {
+&__message {
+	padding: 50px;
+	font-weight: 700;
+font-size: 18px;
+line-height: 1.22;
+color: #000000;
+text-align: center;
+
+&--none {
+	display: none;
+}
+	@media screen and (min-width: $tablet){
+font-size: 24px;
+}
+	@media screen and (min-width: $desktop){
+font-size: 36px;
+	}
 
 }
 
 
-// &__item:first-child {
-// // display: none;
-// font-weight: 500;
-// font-size: 16px;
-// line-height: 20px;
-// color: #373737;
-// @media screen and (min-width: $tablet){
-// display: flex;
-// }
-// 	@media screen and (min-width: $desktop){
-// 	}
-// }
+&__title-list {
+display: none;
+padding-bottom: 15px;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: #373737;
+	border-bottom: 0.5px solid #CDCDCD;
+
+@media screen and (min-width: $tablet){
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+@media screen and (min-width: $desktop){
+padding-left: 65px;
+padding-right: 65px;
+}
+}
 
 &__item:last-child {
 	border-bottom: 0.5px solid #CDCDCD;
@@ -217,6 +246,7 @@ font-size: 20px;
 	font-size: 12px;
 	line-height: 1.25;
 	text-transform: uppercase;
+	text-align: center;
 	background-color: $btn-bgc;
 	color: $btn-text-color;
 	cursor: pointer;

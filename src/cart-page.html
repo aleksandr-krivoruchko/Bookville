@@ -13,19 +13,21 @@
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <header class="header">
-      <include src="./partials/header.html"></include>
-      <include src="./partials/navigation.html"></include>
-      <include src="./partials/path.html"></include>
-    </header>
+    <div class="wrapper">
+      <header class="header">
+        <include src="./partials/header.html"></include>
+        <include src="./partials/navigation.html"></include>
+        <include src="./partials/path.html"></include>
+      </header>
 
-    <main class="main">
-      <include src="./partials/cart.html"></include>
-    </main>
+      <main class="main">
+        <include src="./partials/cart.html"></include>
+      </main>
 
-    <footer class="footer">
-      <include src="./partials/footer.html"></include>
-    </footer>
+      <footer class="footer">
+        <include src="./partials/footer.html"></include>
+      </footer>
+    </div>
 
     <script type="module" src="./js/cart.js"></script>
   </body>
