@@ -1,29 +1,15 @@
-import { refs } from './common-ref.js';
+import { refs } from './common-ref';
 import { bookCounter } from './book-counter.js';
+import photo_1 from '../images/photo-1.jpg';
+import photo_2 from '../images/photo-2.jpg';
+import photo_3 from '../images/photo-3.jpg';
 
-const BOOKS = [
-  {
-    id: 1,
-    img: 'https://cdn.pixabay.com/photo/2019/08/19/08/34/portrait-4415789__340.jpg',
-    author: 'Ольга Примаченко',
-    name: 'К себе нежно',
-    price: 790,
-  },
-  {
-    id: 2,
-    img: 'https://cdn.pixabay.com/photo/2020/01/21/17/40/mechanism-failure-4783468__340.jpg',
-    author: 'Барбара Колорозо',
-    name: 'Травля',
-    price: 990,
-  },
-  //   {
-  //     id: 3,
-  //     img: 'https://cdn.pixabay.com/photo/2019/11/03/11/43/skull-4598438__340.jpg',
-  //     author: 'Максим Поташев, Павел Ершов',
-  //     name: 'Правила команды',
-  //     price: 1190,
-  //   },
-];
+const savedBooks = localStorage.getItem('booksInCart');
+const booksInCart = JSON.parse(savedBooks);
+
+refs.headerCartBooksCount.textContent = booksInCart.length;
+
+refs.paymentBtn.addEventListener('click', paymentBtnClickHandler);
 
 const itemTemplate = ({
   id,
@@ -33,7 +19,7 @@ const itemTemplate = ({
   price,
 }) => `<li class="cart__item" id=${id}>
         <div class="cart__img-wrapper">
-          <img src=${img} alt=${name} class="cart__img" width='80' height='100' />
+          <img src='${img}' alt=${name} class="cart__img" width="50" height="80"/>
         </div>
         <div class="cart__book-info">
           <div>
@@ -45,7 +31,7 @@ const itemTemplate = ({
               <button class="cart__book-amount-btn" data-action="incr">
                 +
               </button>
-              <span class="cart__book-amount-text">0</span>
+              <span class="cart__book-amount-text">1</span>
               <button class="cart__book-amount-btn" data-action="decr">
                 -
               </button>
@@ -55,10 +41,19 @@ const itemTemplate = ({
         </div>
       </li>`;
 
+const sendMessage = `<h2 class="cart__title" style='padding: 50px'>Thanks for order.</h2>`;
+
+render();
+bookCounter();
+
 function render() {
-  const markup = BOOKS.map(itemTemplate);
+  const markup = booksInCart.map(itemTemplate);
 
   refs.bookList.insertAdjacentHTML('beforeend', markup.join(''));
 }
-render();
-bookCounter();
+
+function paymentBtnClickHandler(e) {
+  e.preventDefault();
+  refs.bookList.innerHTML = sendMessage;
+  localStorage.removeItem('booksInCart');
+}

@@ -9,6 +9,9 @@ export function bookCounter() {
     const btnDecr = el.querySelector('button[data-action="decr"]');
     let price = el.querySelector('.cart__book-price span');
 
+    refs.paymentTotalPrice.textContent =
+      Number(refs.paymentTotalPrice.textContent) + Number(price.textContent);
+
     if (bookAmount.textContent == 0) {
       btnDecr.disabled = true;
       btnDecr.classList.add('cart__book-amount-btn--disabled');

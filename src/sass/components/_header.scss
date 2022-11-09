@@ -18,6 +18,7 @@
 	padding: 0 10px;
 	@media screen and (min-width: $tablet) {
 	padding: 0 15px;
+	position: relative;
 }
 }
 
@@ -91,6 +92,31 @@ display: block;
 	cursor: pointer;
 	@media screen and (min-width: $tablet) {
 width: 155px;
+}
+}
+
+	.cart__count span {
+		display: none;
+			@media screen and (min-width: $tablet) {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 7px;
+	top: -7px;
+	width: 20px;
+	height: 20px;
+	background-color: $header-icon-color;
+	border: 1px solid $main-bgc;
+	border-radius: 50%;
+	color: $main-bgc;
+	font-weight: 400;
+font-size: 12px;
+line-height: 12px;
+}
+@media screen and (min-width: $desktop) {
+		width: 24px;
+	height: 24px;
 }
 }
 
