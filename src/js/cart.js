@@ -1,19 +1,14 @@
 import { refs } from './common-ref';
 import { bookCounter } from './book-counter.js';
-// import photo_1 from '../images/photo-1.jpg';
-// import photo_2 from '../images/photo-2.jpg';
-// import photo_3 from '../images/photo-3.jpg';
 
 const savedBooks = localStorage.getItem('booksInCart');
 const booksInCart = JSON.parse(savedBooks);
 
+refs.headerCartBooksCount.textContent = booksInCart.length;
+
 if (booksInCart) {
   refs.cartMessage.classList.add('cart__message--none');
 }
-
-refs.headerCartBooksCount.textContent = booksInCart.length;
-
-refs.paymentBtn.addEventListener('click', paymentBtnClickHandler);
 
 const itemTemplate = ({
   id,
@@ -45,8 +40,6 @@ const itemTemplate = ({
         </div>
       </li>`;
 
-const sendMessage = `<h2 class="cart__title" style='padding: 50px'>Thanks for order.</h2>`;
-
 render();
 bookCounter();
 
@@ -54,10 +47,4 @@ function render() {
   const markup = booksInCart.map(itemTemplate);
 
   refs.bookList.insertAdjacentHTML('beforeend', markup.join(''));
-}
-
-function paymentBtnClickHandler(e) {
-  e.preventDefault();
-  refs.bookList.innerHTML = sendMessage;
-  localStorage.removeItem('booksInCart');
 }

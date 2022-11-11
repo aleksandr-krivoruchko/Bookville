@@ -1,56 +1,130 @@
-<div class="container order__container">
-  <h1 class="order__title">Оформление заказа</h1>
-  <p class="order__subtitle">Детали оплаты</p>
-  <form action="" class="form">
-    <input type="text" class="form__input" placeholder="Ваше имя" />
-    <input type="text" class="form__input" placeholder="Ваша фамилия" />
-    <input type="text" class="form__input" placeholder="E-mail" />
-    <input type="text" class="form__input" placeholder="Номер телефона" />
-    <select>
-      <option value="">Страна</option>
-      <option value="">Украина</option>
-      <option value="">Польща</option>
-      <option value="">Румыния</option>
-      <option value="">Молдова</option>
-    </select>
-    <input type="text" class="form__input" placeholder="Улица и т.д." />
-    <input
-      type="text"
-      class="form__input"
-      placeholder="Подъезд, этаж и т.п. "
-    />
-    <input type="text" class="form__input" placeholder="Населенный пункт" />
-    <input type="text" class="form__input" placeholder="Область/регион" />
-    <input type="text" class="form__input" placeholder="Почтовый индекс" />
+<div class="container order">
+  <h2 class="order__title">Оформление заказа</h2>
 
-    <label for="q" class="order__subtitle">Дополнительная информация</label>
-    <textarea name="" id="q" cols="50" rows="5"></textarea>
+  <form action="#" class="form">
+    <div class="form__user-info">
+      <p class="form__subtitle">Детали оплаты</p>
+      <input type="text" class="form__input" placeholder="Ваше имя" />
+      <input type="text" class="form__input" placeholder="Ваша фамилия" />
+      <input type="text" class="form__input" placeholder="E-mail" />
+      <input type="text" class="form__input" placeholder="Номер телефона" />
+      <select class="form__input">
+        <option value="">Страна</option>
+        <option value="">Украина</option>
+        <option value="">Польща</option>
+        <option value="">Румыния</option>
+        <option value="">Молдова</option>
+      </select>
+      <input type="text" class="form__input" placeholder="Улица и т.д." />
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Подъезд, этаж и т.п. "
+      />
+      <input type="text" class="form__input" placeholder="Населенный пункт" />
+      <input type="text" class="form__input" placeholder="Область/регион" />
+      <input type="text" class="form__input" placeholder="Почтовый индекс" />
 
-    <p class="order__subtitle">Способ оплаты</p>
-    <label>
-      <input type="radio" name="payment-method" value="cash" checked />
-      Оплата наличными
-    </label>
-    <label>
-      <input type="radio" name="payment-method" value="transfer" />
-      Оплата переводом
-    </label>
-    <label>
-      <input type="radio" name="payment-method" value="courier" />
-      Наличными курьеру
-    </label>
-    <label>
-      <input type="radio" name="payment-method" value="card" />
-      Оплата банковской картой
-    </label>
+      <label for="info" class="form__subtitle">Дополнительная информация</label>
+      <textarea class="form__input" name="" id="info" rows="2"> </textarea>
+    </div>
+
+    <div>
+      <div class="form__payment-method">
+        <p class="form__subtitle">Способ оплаты</p>
+        <label class="form__payment-label">
+          <svg class="form__icon form__icon--checked">
+            <use href="images/symbol-defs.svg#icon-bird"></use>
+          </svg>
+          <input type="radio" name="payment-method" value="cash" checked />
+          Оплата наличными
+        </label>
+        <label class="form__payment-label">
+          <svg class="form__icon">
+            <use href="images/symbol-defs.svg#icon-bird"></use>
+          </svg>
+
+          <input type="radio" name="payment-method" value="transfer" />
+          Оплата переводом
+        </label>
+        <label class="form__payment-label">
+          <svg class="form__icon">
+            <use href="images/symbol-defs.svg#icon-bird"></use>
+          </svg>
+
+          <input type="radio" name="payment-method" value="courier" />
+          Наличными курьеру
+        </label>
+        <label class="form__payment-label">
+          <svg class="form__icon">
+            <use href="images/symbol-defs.svg#icon-bird"></use>
+          </svg>
+
+          <input type="radio" name="payment-method" value="card" />
+          Оплата банковской картой
+        </label>
+      </div>
+
+      <div class="form__delivery-method">
+        <p class="form__subtitle">Способ доставки</p>
+
+        <label class="form__payment-label">
+          <svg class="form__icon form__icon--checked">
+            <use href="images/symbol-defs.svg#icon-bird"></use>
+          </svg>
+          <input type="radio" name="delivery-method" value="Pickup" checked />
+          Самовывоз
+        </label>
+
+        <label class="form__payment-label">
+          <svg class="form__icon">
+            <use href="images/symbol-defs.svg#icon-bird"></use>
+          </svg>
+          <input type="radio" name="delivery-method" value="Pickup" checked />
+          По Молдове
+        </label>
+
+        <label class="form__payment-label">
+          <svg class="form__icon">
+            <use href="images/symbol-defs.svg#icon-bird"></use>
+          </svg>
+          <input type="radio" name="delivery-method" value="Pickup" checked />
+          По Кишиневу
+        </label>
+
+        <label class="form__payment-label">
+          <svg class="form__icon">
+            <use href="images/symbol-defs.svg#icon-bird"></use>
+          </svg>
+          <input type="radio" name="delivery-method" value="Pickup" checked />
+          По Европе
+        </label>
+      </div>
+
+      <div class="">
+        <p class="form__subtitle">Ваш заказ</p>
+
+        <div class="order-card">
+          <div class="order-card__title-list">
+            <p>Товар</p>
+            <p>Итого</p>
+          </div>
+          <ul class="order-card__list">
+            <li class="order-card__item">
+              <div>
+                <p class="card__author">Ольга Примаченко</p>
+                <p class="card__book">К себе нежно</p>
+              </div>
+              <p class="card__price">790$</p>
+            </li>
+          </ul>
+          <div class="order-card__total-wrapper">
+            <p>Итого:</p>
+            <p>0$</p>
+          </div>
+        </div>
+        <button type="submit" class="cart__btn">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+      </div>
+    </div>
   </form>
-  <p class="order__subtitle">Ваш заказ</p>
-      <ul class="cart__title-list">
-      <li class="cart__item-text">Товар</li>
-      <li class="cart__item-text">Итого</li>
-    </ul>
-    <ul class="cart__list"></ul>
-    <div class="cart__total-wrapper">
-      <p class="cart__total-price">Итого: <span> 0 </span> $</p>
-
-	<button class="cart__btn">ПОДТВЕРДИТЬ ЗАКАЗ</button
+</div>
