@@ -29,9 +29,9 @@ a {
 }
 
 body {
-  background: #E5E5E5;
+  background: #e5e5e5;
   color: #000000;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   letter-spacing: 0.04em;
 }
@@ -72,6 +72,5 @@ body {
 }
 
 .header {
-  background-color: yellow;
   padding: 12px 0 18px 0;
-}/*# sourceMappingURL=index.css.map */
+}

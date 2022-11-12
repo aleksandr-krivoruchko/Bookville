@@ -1,58 +1,21 @@
 .hero {
 	position: relative;
 	padding: 20px 0;
+
 	&__img {
   display: block;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-&__container {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	// border: 1px solid red;
-	height: 178px;
-	@media screen and (min-width: $tablet){
-		height: 320px;
-	}
-	@media screen and (min-width: $desktop){
-		height: 560px;
-	}
-}
-&__icon{
-	position: absolute;
-	top: 50%;
-	width: 20px;
-	height: 20px;
+&__icon {
 	cursor: pointer;
-}
-&__icon--left{
-	left: -10px;
-		@media screen and (min-width: $tablet){
-	left: -30px;
-	}
-
-	@media screen and (min-width: $desktop){
-	left: -50px;
-	}
-}
-	&__icon--right{
-	right: -10px;
-			@media screen and (min-width: $tablet){
-	right: -30px;
-	}
-
-	@media screen and (min-width: $desktop){
-	right: -50px;
-	}
-
-}
-&__icon:hover{
+	&:hover{
 		stroke: black;
 	}
+
 }
+ }
 .btn {
 position: absolute;
 bottom: 35px;
@@ -115,4 +78,11 @@ width: 20px;
 height: 20px;
 	}
 	}
+}
+
+.swiper-pagination span {
+	background-color: $btn-bgc;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
 }
