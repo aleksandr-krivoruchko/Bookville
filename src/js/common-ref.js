@@ -22,4 +22,8 @@ export const refs = {
 
   //=========pop books====================
   popBooksList: document.querySelector('.popular__books'),
+
+  //==========menu=======================
+  menuBtn: document.querySelector('[data-menu]'),
+  menu: document.querySelector('.menu'),
 };

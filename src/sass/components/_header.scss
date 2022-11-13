@@ -65,6 +65,11 @@ cursor: pointer;
 }
 }
 
+&__menu-btn {
+	background-color: transparent;
+	border: none;
+}
+
 &__left-menu {
 	display: flex;
   @media screen and (min-width: $desktop) {
