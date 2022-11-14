@@ -1,35 +1,3 @@
-import { refs } from './common-ref';
-
-refs.orderForm.addEventListener('submit', onFormSubmit);
-
-function onFormSubmit(e) {
-  e.preventDefault();
-
-  const data = new FormData(refs.orderForm);
-  //   const {
-  //     elements: { name, surname, mail, tel },
-  //   } = e.currentTarget;
-
-  //   const order = {
-  //     name: name.value,
-  //     surname: surname.value,
-  //     mail: mail.value,
-  //     tel: tel.value,
-  //   };
-
-  //   if (name.value === '' || surname.value === '' || mail.value === '') {
-  //     return console.log('Please fill in all the fields!');
-  //   }
-
-  const abj = {};
-
-  data.forEach(el => {
-    console.log(el[el.name]);
-  });
-
-  //   e.currentTarget.reset();
-}
-
 const radioBtns = document.querySelector('.form__payment-method');
 radioBtns.addEventListener('click', onRadioBtnsAddClass);
 

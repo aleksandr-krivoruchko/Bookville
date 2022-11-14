@@ -1,32 +1,68 @@
 <div class="container order">
   <h2 class="order__title">Оформление заказа</h2>
 
-  <form action="#" class="form">
+  <form class="form" autocomplete="off">
     <div class="form__user-info">
       <p class="form__subtitle">Детали оплаты</p>
-      <input type="text" class="form__input" placeholder="Ваше имя" />
-      <input type="text" class="form__input" placeholder="Ваша фамилия" />
-      <input type="text" class="form__input" placeholder="E-mail" />
-      <input type="text" class="form__input" placeholder="Номер телефона" />
-      <select class="form__input">
-        <option value="">Страна</option>
-        <option value="">Украина</option>
-        <option value="">Польща</option>
-        <option value="">Румыния</option>
-        <option value="">Молдова</option>
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Ваше имя"
+        name="name"
+      />
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Ваша фамилия"
+        name="surname"
+      />
+      <input type="text" class="form__input" placeholder="E-mail" name="mail" />
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Номер телефона"
+        name="tel"
+      />
+      <select class="form__input" name="country">
+        <option>Страна</option>
+        <option value="UA">Украина</option>
+        <option value="PL">Польща</option>
+        <option value="RM">Румыния</option>
+        <option value="ML">Молдова</option>
       </select>
-      <input type="text" class="form__input" placeholder="Улица и т.д." />
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Улица и т.д."
+        name="street"
+      />
       <input
         type="text"
         class="form__input"
         placeholder="Подъезд, этаж и т.п. "
+        name="floor"
       />
-      <input type="text" class="form__input" placeholder="Населенный пункт" />
-      <input type="text" class="form__input" placeholder="Область/регион" />
-      <input type="text" class="form__input" placeholder="Почтовый индекс" />
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Населенный пункт"
+        name="Locality"
+      />
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Область/регион"
+        name="region"
+      />
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Почтовый индекс"
+        name="postcode"
+      />
 
       <label for="info" class="form__subtitle">Дополнительная информация</label>
-      <textarea class="form__input" name="" id="info" rows="2"> </textarea>
+      <textarea class="form__input" id="info" rows="2" name="info"> </textarea>
     </div>
 
     <div>
@@ -101,7 +137,7 @@
         </label>
       </div>
 
-      <div class="">
+      <div class="order-info">
         <p class="form__subtitle">Ваш заказ</p>
 
         <div class="order-card">

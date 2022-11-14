@@ -1,83 +1,20 @@
 import { refs } from './common-ref';
-import photo from '../images/book.jpg';
-import icons from '../images/symbol-defs.svg';
+import cardTpl from '../templates/card.hbs';
 import { setBooksCountInCart } from './setBooksCountInCart';
+import POPULAR_BOOKS from '../books.json';
 
-const POPULAR_BOOKS = [
-  {
-    id: 1,
-    img: photo,
-    author: 'Ольга Примаченко',
-    name: 'К себе нежно',
-    price: 790,
-  },
-  {
-    id: 2,
-    img: photo,
-    author: 'Барбара Колорозо',
-    name: 'Травля',
-    price: 990,
-  },
-  {
-    id: 3,
-    img: photo,
-    author: 'Максим Поташев, Павел Ершов',
-    name: 'Правила команды',
-    price: 1190,
-  },
-  {
-    id: 4,
-    img: photo,
-    author: 'Барбара Колорозо',
-    name: 'Травля',
-    price: 990,
-  },
-  {
-    id: 5,
-    img: photo,
-    author: 'Максим Поташев, Павел Ершов',
-    name: 'Правила команды',
-    price: 1190,
-  },
-];
+const savedBooks = localStorage.getItem('booksInCart');
+const parsedSavedBooks = JSON.parse(savedBooks);
 
-const itemTemplate = ({
-  id,
-  img,
-  author,
-  name,
-  price,
-}) => `<li class="card" id=${id}>
-        <div class="card__wrapper">
-          <div class="card__heart">
-            <svg class="card__icon-heart">
-              <use href="${icons}#icon-heart"></use>
-            </svg>
-          </div>
-          <div class="card__thumb">
-            <img src='${img}' alt='${name}' class="card__img" />
-          </div>
-          <div class="card__info">
-            <p class="card__author">${author}</p>
-            <p class="card__book">${name}</p>
-            <p class="card__price">${price}$</p>
-            <svg class="card__icon-cart">
-              <use href="${icons}#icon-cart"></use>
-            </svg>
-          </div>
-        </div>
-      </li>`;
+let booksInCart;
 
-function render() {
-  const markup = POPULAR_BOOKS.map(itemTemplate);
-  refs.popBooksList.insertAdjacentHTML('beforeend', markup.join(''));
+if (parsedSavedBooks) {
+  booksInCart = [...parsedSavedBooks];
 }
-
-render();
 
 refs.popBooksList.addEventListener('click', popBookClickHandler);
 
-const booksInCart = [];
+render();
 
 function popBookClickHandler(e) {
   if (
@@ -90,9 +27,13 @@ function popBookClickHandler(e) {
     );
 
     booksInCart.push(checkedBook);
-
     localStorage.setItem('booksInCart', JSON.stringify(booksInCart));
 
     setBooksCountInCart();
   }
+}
+
+function render() {
+  const markup = POPULAR_BOOKS.map(cardTpl);
+  refs.popBooksList.insertAdjacentHTML('beforeend', markup.join(''));
 }

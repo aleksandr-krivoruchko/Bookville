@@ -1,0 +1,51 @@
+[
+	{
+		"id": 1,
+		"img": "https://readrate.com/img/pictures/book/292/29286/29286/w160h240-stretch-5ed3128e.jpg",
+		"author": "Рэй Брэдбери",
+		"name": "451° по Фаренгейту",
+		"price": 79
+	},
+	{
+		"id": 2,
+		"img": "https://readrate.com/img/pictures/book/295/29554/29554/w160h240-stretch-eccecf43.jpg",
+		"author": "Джордж Оруэлл",
+		"name": "1984",
+		"price": 70
+	},
+	{
+		"id": 3,
+		"img": "https://readrate.com/img/pictures/book/294/29495/29495/w160h240-stretch-98cc5ada.jpg",
+		"author": "Михаил Булгаков",
+		"name": "Мастер и Маргарита",
+		"price": 80
+	},
+	{
+		"id": 4,
+		"img": "https://readrate.com/img/pictures/book/300/30024/30024/w160h240-stretch-1cf76e6f.jpg",
+		"author": "Грегори Дэвид Робертс",
+		"name": "Шантарам",
+		"price": 93
+	},
+	{
+		"id": 5,
+		"img": "https://readrate.com/img/pictures/book/338/33800/33800/w160h240-stretch-dfdf5ef1.jpg",
+		"author": "Эрих Мария Ремарк",
+		"name": "Три товарища",
+		"price": 66
+	},
+	{
+		"id": 6,
+		"img": "https://readrate.com/img/pictures/book/292/29234/29234/w160h240-stretch-c262b73b.jpg",
+		"author": "Дэниел Киз",
+		"name": "Цветы для Элджернона",
+		"price": 74
+	},
+	{
+		"id": 7,
+		"img": "https://readrate.com/img/pictures/book/298/29818/29818/w160h240-stretch-bd100eb2.jpg",
+		"author": "Оскар Уайльд",
+		"name": "Портрет Дориана Грея",
+		"price": 85
+	}
+]

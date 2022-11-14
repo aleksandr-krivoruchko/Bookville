@@ -26,4 +26,7 @@ export const refs = {
   //==========menu=======================
   menuBtn: document.querySelector('[data-menu]'),
   menu: document.querySelector('.menu'),
+
+  //===========order form================
+  orderForm: document.querySelector('.form'),
 };
