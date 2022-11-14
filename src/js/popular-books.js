@@ -4,13 +4,7 @@ import { setBooksCountInCart } from './setBooksCountInCart';
 import POPULAR_BOOKS from '../books.json';
 
 const savedBooks = localStorage.getItem('booksInCart');
-const parsedSavedBooks = JSON.parse(savedBooks);
-
-let booksInCart;
-
-if (parsedSavedBooks) {
-  booksInCart = [...parsedSavedBooks];
-}
+const parsedSavedBooks = JSON.parse(savedBooks) || [];
 
 refs.popBooksList.addEventListener('click', popBookClickHandler);
 
@@ -26,8 +20,8 @@ function popBookClickHandler(e) {
       book => book.id === Number(checkedBookId)
     );
 
-    booksInCart.push(checkedBook);
-    localStorage.setItem('booksInCart', JSON.stringify(booksInCart));
+    parsedSavedBooks.push(checkedBook);
+    localStorage.setItem('booksInCart', JSON.stringify(parsedSavedBooks));
 
     setBooksCountInCart();
   }

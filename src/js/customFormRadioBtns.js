@@ -1,18 +1,17 @@
-const radioBtns = document.querySelector('.form__payment-method');
-radioBtns.addEventListener('click', onRadioBtnsAddClass);
+import { refs } from './common-ref';
 
-const radioBtnsDelivery = document.querySelector('.form__delivery-method');
-radioBtnsDelivery.addEventListener('click', onRadioBtnsDeleteClass);
+refs.radioPaymentBtns.addEventListener('click', onRadioPaymentBtnsClick);
+refs.radioDeliveryBtns.addEventListener('click', onRadioDeliveryBtnsClick);
 
-function onRadioBtnsAddClass(e) {
+function onRadioPaymentBtnsClick(e) {
   if (e.target.nodeName !== 'LABEL') {
     return;
   }
 
-  const currentActiveRadioBtn = radioBtns.querySelector(
+  const currentActiveRadioBtn = refs.radioPaymentBtns.querySelector(
     '.form__payment-label--active'
   );
-  const currentActiveIconCheck = radioBtns.querySelector(
+  const currentActiveIconCheck = refs.radioPaymentBtns.querySelector(
     '.form__icon--checked'
   );
 
@@ -26,15 +25,16 @@ function onRadioBtnsAddClass(e) {
   e.target.classList.add('form__payment-label--active');
   e.target.firstElementChild.classList.add('form__icon--checked');
 }
-function onRadioBtnsDeleteClass(e) {
+
+function onRadioDeliveryBtnsClick(e) {
   if (e.target.nodeName !== 'LABEL') {
     return;
   }
 
-  const currentActiveRadioBtn = radioBtnsDelivery.querySelector(
+  const currentActiveRadioBtn = refs.radioDeliveryBtns.querySelector(
     '.form__payment-label--active'
   );
-  const currentActiveIconCheck = radioBtnsDelivery.querySelector(
+  const currentActiveIconCheck = refs.radioDeliveryBtns.querySelector(
     '.form__icon--checked'
   );
 

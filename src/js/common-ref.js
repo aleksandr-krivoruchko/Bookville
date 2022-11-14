@@ -29,4 +29,6 @@ export const refs = {
 
   //===========order form================
   orderForm: document.querySelector('.form'),
+  radioPaymentBtns: document.querySelector('.form__payment-method'),
+  radioDeliveryBtns: document.querySelector('.form__delivery-method'),
 };
