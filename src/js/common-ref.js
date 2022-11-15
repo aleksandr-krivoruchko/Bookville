@@ -31,4 +31,7 @@ export const refs = {
   orderForm: document.querySelector('.form'),
   radioPaymentBtns: document.querySelector('.form__payment-method'),
   radioDeliveryBtns: document.querySelector('.form__delivery-method'),
+  booksInOrder: document.querySelector('.order-card__list'),
+  totalPriceInCart: document.querySelector('.cart__total-price span'),
+  totalPriceInOrder: document.querySelector('.order-card__total-wrapper span'),
 };

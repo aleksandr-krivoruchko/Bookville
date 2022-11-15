@@ -3,7 +3,7 @@ import { refs } from './common-ref';
 refs.radioPaymentBtns.addEventListener('click', onRadioPaymentBtnsClick);
 refs.radioDeliveryBtns.addEventListener('click', onRadioDeliveryBtnsClick);
 
-function onRadioPaymentBtnsClick(e) {
+export function onRadioPaymentBtnsClick(e) {
   if (e.target.nodeName !== 'LABEL') {
     return;
   }
@@ -26,7 +26,7 @@ function onRadioPaymentBtnsClick(e) {
   e.target.firstElementChild.classList.add('form__icon--checked');
 }
 
-function onRadioDeliveryBtnsClick(e) {
+export function onRadioDeliveryBtnsClick(e) {
   if (e.target.nodeName !== 'LABEL') {
     return;
   }
