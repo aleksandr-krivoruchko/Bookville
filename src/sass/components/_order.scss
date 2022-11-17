@@ -22,8 +22,11 @@ padding-bottom: 20px;
 .form {
 display: flex;
 flex-direction: column;
-		@media screen and (min-width: $desktop) {
-flex-direction: row;	}
+@media screen and (min-width: $desktop) {
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+	}
 
 
 	&__input {
@@ -60,7 +63,20 @@ border-radius: 8px;
 		&__user-info {
 			display: flex;
 			flex-direction: column;
+			flex: 0 0 45%;
 			margin-bottom: 20px;
+		}
+
+		&__radio-wrapper {
+			@media screen and (min-width: $tablet) {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		}
+		@media screen and (min-width: $desktop) {
+		flex: 0 0  45%;
+		display: flex;
+		}
 		}
 
 		&__payment-method {
@@ -85,6 +101,14 @@ border-radius: 8px;
 		color: $title-color;
 		margin-bottom: 20px;
 		padding-left: 40px;
+				@media screen and (min-width: $tablet) {
+		font-size: 16px;
+		}
+
+		@media screen and (min-width: $desktop) {
+		font-size: 18px;
+		}
+
 
 		& > input {
 			display: none;
@@ -117,16 +141,24 @@ border-radius: 8px;
 		}
 }
 
+.order__info {
+	width: 100%;
+	margin: 0 auto;
+		@media screen and (min-width: $tablet) {
+	}
+		@media screen and (min-width: $tablet) {
+	}
+
+}
+
 .order-card {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	min-height: 200px;
-background: #F9F9F9;
-border-radius: 5px;
-padding: 17px;
+	background: #F9F9F9;
+	border-radius: 5px;
+	padding: 17px;
 	margin-bottom: 20px;
-			@media screen and (min-width: $tablet) {
+	@media screen and (min-width: $tablet) {
+	
 	}
 		@media screen and (min-width: $tablet) {
 	}
@@ -147,35 +179,34 @@ padding: 17px;
 	}
 		@media screen and (min-width: $tablet) {
 	}
-
 }
-
 
 &__total-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-		padding-top: 15px;
+	padding-top: 15px;
 	border-top: 0.5px solid #9E9E9E;
 	font-weight: 500;
-	font-size: 16px;
 	line-height: 20px;
 	color: #303030;
-			@media screen and (min-width: $tablet) {
-	font-size: 18px;
-	}
-		@media screen and (min-width: $tablet) {
-	}
-
 }
 &__item{
 display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 }
 
-&__list {
+& p,
+& span {
+	font-size: 14px;
+		@media screen and (min-width: $tablet) {
+	font-size: 16px;
+	}
+		@media screen and (min-width: $desktop) {
+				font-size: 18px;
+	}
+
 }
 
 &__total-price {
