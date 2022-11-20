@@ -2,9 +2,9 @@ import { refs } from './common-ref';
 import cardTpl from '../templates/card.hbs';
 import { setBooksCountInCart } from './setBooksCountInCart';
 import POPULAR_BOOKS from '../books.json';
+import { getBooksFromStorage } from './getBooksFromStorage';
 
-const savedBooks = localStorage.getItem('booksInCart');
-const parsedSavedBooks = JSON.parse(savedBooks) || [];
+const savedBooks = getBooksFromStorage('booksInCart');
 
 refs.popBooksList.addEventListener('click', popBookClickHandler);
 
@@ -15,13 +15,20 @@ function popBookClickHandler(e) {
     e.target.nodeName === 'svg' &&
     e.target.classList.contains('card__icon-cart')
   ) {
-    const checkedBookId = e.target.closest('li').getAttribute('id');
-    const checkedBook = POPULAR_BOOKS.find(
-      book => book.id === Number(checkedBookId)
-    );
+    const checkedBookId = Number(e.target.closest('li').getAttribute('id'));
 
-    parsedSavedBooks.push(checkedBook);
-    localStorage.setItem('booksInCart', JSON.stringify(parsedSavedBooks));
+    const checkedBook = POPULAR_BOOKS.find(book => book.id === checkedBookId);
+    checkedBook.quantity = 1;
+
+    const isInCart = savedBooks.find(el => el.id === checkedBookId);
+
+    if (!isInCart) {
+      savedBooks.push(checkedBook);
+    } else {
+      isInCart.quantity++;
+    }
+
+    localStorage.setItem('booksInCart', JSON.stringify(savedBooks));
 
     setBooksCountInCart();
   }

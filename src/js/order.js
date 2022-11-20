@@ -1,9 +1,12 @@
 import { refs } from './common-ref';
 import orderItemTpl from '../templates/order-item.hbs';
+import { setBooksCountInCart } from './setBooksCountInCart';
+import { getBooksFromStorage } from './getBooksFromStorage';
 
 const STORAGE_KEY = 'order-form';
 
 render();
+setBooksCountInCart();
 setBooksCountInOrder();
 
 refs.orderForm.addEventListener('submit', onFormSubmit);
@@ -21,11 +24,8 @@ function setInputToStorage(e) {
 function onFormSubmit(e) {
   e.preventDefault();
   const obj = {};
+  const savedBooks = getBooksFromStorage('booksInCart');
 
-  let savedBooks = localStorage.getItem('booksInCart');
-  if (savedBooks) {
-    savedBooks = JSON.parse(savedBooks);
-  }
   obj.order = savedBooks;
 
   const formData = new FormData(refs.orderForm);

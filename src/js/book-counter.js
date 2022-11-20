@@ -1,4 +1,5 @@
 import { refs } from './common-ref.js';
+import { getBooksFromStorage } from './getBooksFromStorage';
 
 export function bookCounter() {
   const bookListItems = document.querySelectorAll('.cart__list .cart__item');
@@ -19,6 +20,7 @@ export function bookCounter() {
 
     btnIncr.addEventListener('click', e => {
       if (e.target.dataset.action === 'incr') {
+        qqq(e);
         bookAmount.textContent++;
         refs.paymentTotalPrice.textContent =
           Number(refs.paymentTotalPrice.textContent) +
@@ -31,6 +33,7 @@ export function bookCounter() {
     });
     btnDecr.addEventListener('click', e => {
       if (e.target.dataset.action === 'decr') {
+        qqq(e);
         bookAmount.textContent--;
         refs.paymentTotalPrice.textContent =
           Number(refs.paymentTotalPrice.textContent) -
@@ -42,4 +45,21 @@ export function bookCounter() {
       }
     });
   });
+}
+
+function qqq(e) {
+  if (e.target.nodeName === 'BUTTON') {
+    const checkedBookId = Number(e.target.closest('li').getAttribute('id'));
+    const savedBooks = getBooksFromStorage('booksInCart');
+
+    const isInCart = savedBooks.find(el => el.id === checkedBookId);
+
+    if (e.target.dataset.action === 'incr') {
+      isInCart.quantity++;
+    } else if (e.target.dataset.action === 'decr') {
+      isInCart.quantity--;
+    }
+
+    localStorage.setItem('booksInCart', JSON.stringify(savedBooks));
+  }
 }

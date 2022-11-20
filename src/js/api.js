@@ -8,7 +8,7 @@ const options = {
   body: '{"cursor":1}',
 };
 
-// fetch('https://readrate.com/rus/ratings/top100')
+// fetch('http://www.boredapi.com')
 //   .then(response => response.json())
 //   .then(response => console.log(response))
 //   .catch(err => console.error(err));

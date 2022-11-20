@@ -1,13 +1,13 @@
 import { refs } from './common-ref';
 import cartItemTpl from '../templates/cart-item.hbs';
 import { bookCounter } from './book-counter.js';
+import { getBooksFromStorage } from './getBooksFromStorage';
 
-const savedBooks = localStorage.getItem('booksInCart');
-const booksInCart = JSON.parse(savedBooks);
+const savedBooks = getBooksFromStorage('booksInCart');
 
-refs.headerCartBooksCount.textContent = booksInCart.length;
+refs.headerCartBooksCount.textContent = savedBooks.length;
 
-if (booksInCart) {
+if (savedBooks) {
   refs.cartMessage.classList.add('cart__message--none');
 }
 
@@ -15,7 +15,7 @@ render();
 bookCounter();
 
 function render() {
-  const markup = booksInCart.map(cartItemTpl);
+  const markup = savedBooks.map(cartItemTpl);
 
   refs.bookList.insertAdjacentHTML('beforeend', markup.join(''));
 }
