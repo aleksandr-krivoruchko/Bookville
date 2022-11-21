@@ -191,6 +191,11 @@ border-radius: 8px;
 	line-height: 20px;
 	color: #303030;
 }
+
+&__list {
+	padding-top: 10px;
+}
+
 &__item{
 display: flex;
 	justify-content: space-between;
@@ -206,10 +211,5 @@ display: flex;
 		@media screen and (min-width: $desktop) {
 				font-size: 18px;
 	}
-
-}
-
-&__total-price {
-
 }
 }

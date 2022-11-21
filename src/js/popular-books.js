@@ -1,4 +1,6 @@
 import { refs } from './common-ref';
+import Toastify from 'toastify-js';
+import 'toastify-js/src/toastify.css';
 import cardTpl from '../templates/card.hbs';
 import { setBooksCountInCart } from './setBooksCountInCart';
 import POPULAR_BOOKS from '../books.json';
@@ -24,8 +26,18 @@ function popBookClickHandler(e) {
 
     if (!isInCart) {
       savedBooks.push(checkedBook);
+      Toastify({
+        text: 'Книга успешно добавлена в корзину',
+        duration: 3000,
+        style: {
+          background: 'linear-gradient(to right, #00b09b, green)',
+        },
+      }).showToast();
     } else {
-      isInCart.quantity++;
+      Toastify({
+        text: 'Эта книга уже есть в корзине',
+        duration: 3000,
+      }).showToast();
     }
 
     localStorage.setItem('booksInCart', JSON.stringify(savedBooks));
