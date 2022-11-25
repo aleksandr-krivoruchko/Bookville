@@ -47,5 +47,26 @@
 		"author": "Оскар Уайльд",
 		"name": "Портрет Дориана Грея",
 		"price": 85
+	},
+	{
+		"id": 8,
+		"img": "https://readrate.com/img/pictures/book/338/33800/33800/w160h240-stretch-dfdf5ef1.jpg",
+		"author": "Эрих Мария Ремарк",
+		"name": "Три товарища",
+		"price": 66
+	},
+	{
+		"id": 9,
+		"img": "https://readrate.com/img/pictures/book/292/29234/29234/w160h240-stretch-c262b73b.jpg",
+		"author": "Дэниел Киз",
+		"name": "Цветы для Элджернона",
+		"price": 74
+	},
+	{
+		"id": 10,
+		"img": "https://readrate.com/img/pictures/book/298/29818/29818/w160h240-stretch-bd100eb2.jpg",
+		"author": "Оскар Уайльд",
+		"name": "Портрет Дориана Грея",
+		"price": 85
 	}
 ]

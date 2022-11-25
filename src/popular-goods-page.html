@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookville Popular</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <include src="./partials/header.html"></include>
+        <include src="./partials/navigation.html"></include>
+        <div class="path">
+          <div class="container">
+            <ul class="path__list">
+              <li class="path__item">
+                <a href="index.html" class="path__link">Главная</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="popular">
+          <div class="container">
+            <h2 class="popular__title">Популярные товары</h2>
+            <ul class="popular__goods"></ul>
+          </div>
+        </section>
+        <include src="./partials/main-page/popular-books.html"></include>
+        <include src="./partials/main-page/consultation.html"></include>
+      </main>
+
+      <footer class="footer">
+        <include src="./partials/footer.html"></include>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/pop-goods.js"></script>
+  </body>
+</html>

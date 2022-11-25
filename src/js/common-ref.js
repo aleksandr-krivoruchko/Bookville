@@ -22,7 +22,7 @@ export const refs = {
 
   //=========pop books====================
   popBooksList: document.querySelector('.popular__books'),
-
+  popularGoods: document.querySelector('.popular__goods'),
   //==========menu=======================
   menuBtn: document.querySelector('[data-menu]'),
   menu: document.querySelector('.menu'),

@@ -1,7 +1,6 @@
 import { refs } from './common-ref';
 import Toastify from 'toastify-js';
 import 'toastify-js/src/toastify.css';
-
 import orderItemTpl from '../templates/order-item.hbs';
 import { setBooksCountInCart } from './setBooksCountInCart';
 import { getBooksFromStorage } from './getBooksFromStorage';
@@ -54,6 +53,7 @@ function onFormSubmit(e) {
   localStorage.removeItem(STORAGE_KEY);
   localStorage.removeItem('booksInCart');
   refs.booksInOrder.innerHTML = '';
+  refs.totalPriceInOrder.textContent = 0;
   e.currentTarget.reset();
 }
 

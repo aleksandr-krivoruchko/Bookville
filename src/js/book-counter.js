@@ -32,14 +32,17 @@ export function bookCounter() {
       }
     });
     btnDecr.addEventListener('click', e => {
-      if (e.target.dataset.action === 'decr') {
+      if (
+        e.target.dataset.action === 'decr' &&
+        e.target.previousElementSibling.textContent > 1
+      ) {
         qqq(e);
         bookAmount.textContent--;
         refs.paymentTotalPrice.textContent =
           Number(refs.paymentTotalPrice.textContent) -
           Number(price.textContent);
       }
-      if (bookAmount.textContent <= 0) {
+      if (bookAmount.textContent <= 1) {
         btnDecr.disabled = true;
         btnDecr.classList.add('cart__book-amount-btn--disabled');
       }
@@ -56,7 +59,8 @@ function qqq(e) {
 
     if (e.target.dataset.action === 'incr') {
       isInCart.quantity++;
-    } else if (e.target.dataset.action === 'decr') {
+    }
+    if (e.target.dataset.action === 'decr') {
       isInCart.quantity--;
     }
 
