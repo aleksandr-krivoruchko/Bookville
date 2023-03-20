@@ -1,7 +1,7 @@
 import { refs } from './common-ref';
 import cartItemTpl from '../templates/cart-item.hbs';
 import { bookCounter } from './book-counter.js';
-import { setBooksCountInCart } from './setBooksCountInCart';
+import { setBooksCountInCart, setBooksCountInFav } from './setBooksCountInCart';
 
 const savedBooks = setBooksCountInCart();
 
@@ -11,6 +11,8 @@ if (savedBooks) {
 
 console.log(savedBooks);
 render();
+setBooksCountInCart();
+// setBooksCountInFav();
 bookCounter();
 
 function render() {

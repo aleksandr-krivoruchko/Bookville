@@ -1,4 +1,5 @@
 import { refs } from './common-ref';
-import { setBooksCountInCart } from './setBooksCountInCart';
+import { setBooksCountInCart, setBooksCountInFav } from './setBooksCountInCart';
 
 setBooksCountInCart();
+setBooksCountInFav();

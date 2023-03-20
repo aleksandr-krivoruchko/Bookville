@@ -3,17 +3,14 @@ import Toastify from 'toastify-js';
 import 'toastify-js/src/toastify.css';
 import cardTpl from '../templates/card.hbs';
 import { setBooksCountInCart } from './setBooksCountInCart';
-import POPULAR_BOOKS from '../books.json';
 import { getBooksFromStorage } from './getBooksFromStorage';
 
 const savedBooks = getBooksFromStorage('booksInCart');
-console.log(savedBooks);
 const favBooks = getBooksFromStorage('booksInFav');
-const pop = getBooksFromStorage('pop');
-console.log(pop);
+const depoBooks = getBooksFromStorage('deposits');
 
-refs.popBooksList.addEventListener('click', addToCart);
-refs.popBooksList.addEventListener('click', addToFavorite);
+refs.depoBooksList.addEventListener('click', addToCart);
+refs.depoBooksList.addEventListener('click', addToFavorite);
 
 render();
 
@@ -84,6 +81,6 @@ function addToFavorite(e) {
 }
 
 function render() {
-  const markup = pop.map(cardTpl);
-  refs.popBooksList.insertAdjacentHTML('beforeend', markup.join(''));
+  const markup = depoBooks.map(cardTpl);
+  refs.depoBooksList.insertAdjacentHTML('beforeend', markup.join(''));
 }

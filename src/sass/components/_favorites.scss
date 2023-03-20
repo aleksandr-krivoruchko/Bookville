@@ -1,0 +1,52 @@
+.fav {
+padding-bottom: 20px;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+	}
+&__title {
+font-weight: 300;
+font-size: 18px;
+line-height: 1.22;
+color: #000000;
+margin-bottom: 20px;
+	@media screen and (min-width: $tablet){
+font-size: 24px;
+margin-bottom: 30px;
+}
+	@media screen and (min-width: $desktop){
+font-size: 36px;
+	}
+}
+
+&__message {
+	padding: 50px;
+	font-weight: 700;
+font-size: 18px;
+line-height: 1.22;
+color: #000000;
+text-align: center;
+
+&--none {
+	display: none;
+}
+	@media screen and (min-width: $tablet){
+font-size: 24px;
+}
+	@media screen and (min-width: $desktop){
+font-size: 36px;
+	}
+}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		margin-bottom: 15px;
+		cursor: pointer;
+	}
+
+}
+
+
+

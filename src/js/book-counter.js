@@ -42,7 +42,7 @@ export function bookCounter() {
           Number(refs.paymentTotalPrice.textContent) -
           Number(price.textContent);
       }
-      if (bookAmount.textContent <= 1) {
+      if (bookAmount.textContent < 1) {
         btnDecr.disabled = true;
         btnDecr.classList.add('cart__book-amount-btn--disabled');
       }

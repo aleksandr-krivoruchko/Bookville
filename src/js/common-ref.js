@@ -8,6 +8,7 @@ export const refs = {
   headerHeart: document.querySelector('[data-heart]'),
   headerCart: document.querySelector('[data-cart]'),
   headerCartBooksCount: document.querySelector('.cart__count span'),
+  headerFavBooksCount: document.querySelector('.fav__count span'),
 
   // ============hero============
   heroBtn: document.querySelector('.btn'),
@@ -20,9 +21,16 @@ export const refs = {
   bookList: document.querySelector('.cart__list'),
   cartMessage: document.querySelector('.cart__message'),
 
+  //===========favorites==============================
+  favoritesList: document.querySelector('.fav__list'),
+  favMessage: document.querySelector('.fav__message'),
+
   //=========pop books====================
   popBooksList: document.querySelector('.popular__books'),
   popularGoods: document.querySelector('.popular__goods'),
+
+  //===============deposits books====================
+  depoBooksList: document.querySelector('.deposits__books'),
   //==========menu=======================
   menuBtn: document.querySelector('[data-menu]'),
   menu: document.querySelector('.menu'),
